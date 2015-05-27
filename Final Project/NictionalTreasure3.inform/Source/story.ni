@@ -1,5 +1,6 @@
 "NictionalTreasure3" by Alex Vincent & Tyler Gatta
 
+<<<<<<< HEAD
 [**REGIONS/ROOMS**]
 
 [Las Vegas Region]
@@ -52,4 +53,8 @@ Traveling is an action applying to nothing.
 
 
 
+=======
+Las Vegas Home is a room.
+The description of the Las Vegas Home is "a luxurious house that probably cost a lot"
+>>>>>>> c78d59635ac7b79cf24b65ff96b0d53298394930
 
