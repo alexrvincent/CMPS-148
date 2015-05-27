@@ -1,17 +1,17 @@
 ! Blurb file created by Inform build 6L38
 
-status "C:\Program Files (x86)\Inform 7\Internal\Miscellany\CblorbModel.html" "C:\Users\Alex\Documents\GitHub\CMPS-148\final.inform\Build\StatusCblorb.html"
+status "C:\Program Files (x86)\Inform 7\Internal\Miscellany\CblorbModel.html" "C:\Users\Tyler Gatta\Documents\GitHub\CMPS-148\final.inform\Build\StatusCblorb.html"
 
 
 ! Identification
 
-project folder "C:\Users\Alex\Documents\GitHub\CMPS-148\final.inform"
+project folder "C:\Users\Tyler Gatta\Documents\GitHub\CMPS-148\final.inform"
 
 ! Blorb instructions
 
 storyfile leafname "final.gblorb"
-storyfile "C:\Users\Alex\Documents\GitHub\CMPS-148\final.inform\Build\output.ulx" include
-ifiction "C:\Users\Alex\Documents\GitHub\CMPS-148\final.inform\Metadata.iFiction" include
+storyfile "C:\Users\Tyler Gatta\Documents\GitHub\CMPS-148\final.inform\Build\output.ulx" include
+ifiction "C:\Users\Tyler Gatta\Documents\GitHub\CMPS-148\final.inform\Metadata.iFiction" include
 cover "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
 picture 1 "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
 
@@ -21,7 +21,7 @@ placeholder [IFID] = "48B07615-DF40-454D-B0DE-C50C4ACEF662"
 placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2015"
 placeholder [TITLE] = "final"
-placeholder [AUTHOR] = "Alex Vincent &amp; Tyler Gatta"
+placeholder [AUTHOR] = "Alex Vincent &amp; Tyler Gatta Las Vegas Home Bedroom is a room"
 placeholder [BLURB] = "A work of interactive fiction."
 
 ! Other material to release
