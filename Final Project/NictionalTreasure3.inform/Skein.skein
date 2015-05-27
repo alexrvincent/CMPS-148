@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-0x0037A390" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x02E037F0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7 for Windows</generator>
-  <activeNode nodeId="node-0x0037A390"/>
-  <item nodeId="node-0x0037A390">
+  <activeNode nodeId="node-0x02E037F0"/>
+  <item nodeId="node-0x02E037F0">
     <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve"></result>
+    <result xml:space="preserve">NictionalTreasure3&#x000A;An Interactive Fiction by Alex Vincent &amp; Tyler Gatta&#x000A;Release 1 / Serial number 150527 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Las Vegas Home&#x000A;a luxurious house that probably costed a lot&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
+    <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
   </item>
