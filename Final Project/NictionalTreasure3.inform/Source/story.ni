@@ -58,7 +58,7 @@ NullRoom is a room.
 [Objects in Bedroom]
 A bed is in the bedroom. "A king sized bed with silk sheets takes up most of the room." The description of the bed is "The bed is still unmade from last night's escapades."
 A spray bottle is an object. The description of the spray bottle is "The bottle is full of lemon juice. Handy for finding clues."
-A declaration is an encrypted object. The printed name of declaration is "Declaration of Independence (declaration)".
+A declaration is an encrypted object. The printed name of declaration is "Declaration of Independence (declaration)". The description of declaration is,"You went back and stole this a second time after the filming of National Treasure 2."
 A nightstand is a closed container in the bedroom. "There is a nightstand by the side of the bed." The nightstand is openable and fixed in place. The description of the nightstand is "An ancient Greek nightstand where you keep your most valuable treasures." The declaration and the spray bottle are in the nightstand. 
 
 
