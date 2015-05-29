@@ -73,6 +73,7 @@ SprayCapacity is a number variable. SprayCapacity is 100.
 [**ACTIONS**]
 Traveling is an action applying to nothing.
 
+[Comment in here]
 Understand "spray [something]" as spraying. Spraying is an action applying to one thing. 
 Check spraying: 
 	if the player does not have the spray bottle, instead say "You need a spray bottle to do this.";
@@ -87,5 +88,3 @@ Report spraying:
 		say "[line break]The spray bottle is now ([SprayCapacity]%) full.";
 	else:
 		say "Default message, replace with clue";
-
-
