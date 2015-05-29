@@ -1,19 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-0x034728B0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x02CBC0C8" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7 for Windows</generator>
-  <activeNode nodeId="node-0x034728B0"/>
-  <item nodeId="node-0x034728B0">
+  <activeNode nodeId="node-0x0B6384A8"/>
+  <item nodeId="node-0x02CBC0C8">
     <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve">NictionalTreasure3&#x000A;An Interactive Fiction by Alex Vincent &amp; Tyler Gatta&#x000A;Release 1 / Serial number 150527 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Las Vegas Home Bedoom&#x000A;a luxurious bedroom that probably costed a lot&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">NictionalTreasure3&#x000A;An Interactive Fiction by Alex Vincent &amp; Tyler Gatta&#x000A;Release 1 / Serial number 150529 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Las Vegas Home Bedroom&#x000A;A king sized bed with silk sheets takes up most of the room.&#x000A;&#x000A;There is a nightstand by the side of the bed.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x03486640"/>
+      <child nodeId="node-0x02CBC1E0"/>
+      <child nodeId="node-0x003740E0"/>
+      <child nodeId="node-0x003741C0"/>
+      <child nodeId="node-0x00374000"/>
+      <child nodeId="node-0x02CD4C30"/>
+      <child nodeId="node-0x02CD4D10"/>
+      <child nodeId="node-0x02CD4CA0"/>
+      <child nodeId="node-0x02CD4DF0"/>
+      <child nodeId="node-0x02D15C30"/>
+      <child nodeId="node-0x02D15BC0"/>
+      <child nodeId="node-0x02D15D10"/>
+      <child nodeId="node-0x02D15B50"/>
+      <child nodeId="node-0x02D15D80"/>
+      <child nodeId="node-0x02D708C0"/>
+      <child nodeId="node-0x02D70C40"/>
+      <child nodeId="node-0x02D24768"/>
+      <child nodeId="node-0x02D24998"/>
+      <child nodeId="node-0x02D24A08"/>
+      <child nodeId="node-0x02D24BC8"/>
     </children>
   </item>
-  <item nodeId="node-0x03486640">
+  <item nodeId="node-0x02CBC1E0">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Las Vegas Home Bedoom&#x000A;a luxurious bedroom that probably costed a lot&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -21,10 +39,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x034866B0"/>
+      <child nodeId="node-0x02CBC250"/>
     </children>
   </item>
-  <item nodeId="node-0x034866B0">
+  <item nodeId="node-0x02CBC250">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -32,10 +50,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x03486720"/>
+      <child nodeId="node-0x02CBC2C0"/>
     </children>
   </item>
-  <item nodeId="node-0x03486720">
+  <item nodeId="node-0x02CBC2C0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -43,12 +61,940 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x03486790"/>
+      <child nodeId="node-0x02CBC330"/>
     </children>
   </item>
-  <item nodeId="node-0x03486790">
+  <item nodeId="node-0x02CBC330">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x003740E0">
+    <command xml:space="preserve">spray bedroom</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x00374070"/>
+    </children>
+  </item>
+  <item nodeId="node-0x00374070">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x003741C0">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x00374150"/>
+    </children>
+  </item>
+  <item nodeId="node-0x00374150">
+    <command xml:space="preserve">take spray bottle</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x00374000">
+    <command xml:space="preserve">home</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x00374230"/>
+    </children>
+  </item>
+  <item nodeId="node-0x00374230">
+    <command xml:space="preserve">go home</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02CD48B0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02CD48B0">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Smithsonian Lobby&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02CD4920"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02CD4920">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02CD4990"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02CD4990">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Smithsonian Main Hall&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02CD4A00"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02CD4A00">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Smithsonian Lobby&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02CD4A70"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02CD4A70">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02CD4AE0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02CD4AE0">
+    <command xml:space="preserve">travel</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02CD4C30">
+    <command xml:space="preserve">take spray bottle</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02CD4BC0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02CD4BC0">
+    <command xml:space="preserve">x spray bottle</command>
+    <result xml:space="preserve">You see nothing special about the spray bottle.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02CD4D10">
+    <command xml:space="preserve">x spray bottle</command>
+    <result xml:space="preserve">The bottle is full of lemon juice. Handy for finding clues.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02CD4F40"/>
+      <child nodeId="node-0x02D709A0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02CD4F40">
+    <command xml:space="preserve">take spray bottle</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02CD4ED0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02CD4ED0">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Las Vegas Home Bedroom&#x000A;A luxurious bedroom that probably cost a lot&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02CD4E60"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02CD4E60">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a spray bottle&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02CD4FB0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02CD4FB0">
+    <command xml:space="preserve">spray bedroom</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02D709A0">
+    <command xml:space="preserve">x nightstand</command>
+    <result xml:space="preserve">You see nothing special about the nightstand.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D70930"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D70930">
+    <command xml:space="preserve">take nightstand</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02CD4CA0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02CD4DF0">
+    <command xml:space="preserve">open nightsand</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02CD4D80"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02CD4D80">
+    <command xml:space="preserve">open nightstand</command>
+    <result xml:space="preserve">It isn't something you can open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02CD4B50"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02CD4B50">
+    <command xml:space="preserve">x nightstnad</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02CD5020"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02CD5020">
+    <command xml:space="preserve">x nightstand</command>
+    <result xml:space="preserve">You see nothing special about the nightstand.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D15A70"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D15A70">
+    <command xml:space="preserve">take doi</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D15AE0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D15AE0">
+    <command xml:space="preserve">take declaration of independance</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02D15C30">
+    <command xml:space="preserve">take bed</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02D15BC0">
+    <command xml:space="preserve">take pillow</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02D15D10">
+    <command xml:space="preserve">spray nighstand</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D15CA0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D15CA0">
+    <command xml:space="preserve">spray nightstand</command>
+    <result xml:space="preserve">Don't waste your juice.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02D15B50">
+    <command xml:space="preserve">spray nightstand</command>
+    <result xml:space="preserve">You need a spray bottle to do this.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D15E60"/>
+      <child nodeId="node-0x0B638128"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D15E60">
+    <command xml:space="preserve">take doi</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D15DF0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D15DF0">
+    <command xml:space="preserve">open nightstand</command>
+    <result xml:space="preserve">It isn't something you can open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0B638128">
+    <command xml:space="preserve">open nightstand</command>
+    <result xml:space="preserve">You open the nightstand, revealing a spray bottle and a Declaration of Independence (declaration).&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0B638198"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0B638198">
+    <command xml:space="preserve">take spray bottle</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0B638208"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0B638208">
+    <command xml:space="preserve">spray nightstand</command>
+    <result xml:space="preserve">Don't waste your juice.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0B638278"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0B638278">
+    <command xml:space="preserve">spray declaration</command>
+    <result xml:space="preserve">You spray the Declaration of Independence (declaration) with lemon juice to reveal a secret message:"There is a"&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02D15D80">
+    <command xml:space="preserve">x nightstand</command>
+    <result xml:space="preserve">You see nothing special about the nightstand.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D15ED0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D15ED0">
+    <command xml:space="preserve">open nightstand</command>
+    <result xml:space="preserve">You open the nightstand, revealing a The Declaration of Independence..&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D15F40"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D15F40">
+    <command xml:space="preserve">take the </command>
+    <result xml:space="preserve">What do you want to take?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D15FB0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D15FB0">
+    <command xml:space="preserve">declaration</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D16020"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D16020">
+    <command xml:space="preserve">take the declaration of independance</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D16090"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D16090">
+    <command xml:space="preserve">take the declaration of independence</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D16100"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D16100">
+    <command xml:space="preserve">take The Declaration of Independence</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D16170"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D16170">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D161E0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D161E0">
+    <command xml:space="preserve">x</command>
+    <result xml:space="preserve">What do you want to examine?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D70770"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D70770">
+    <command xml:space="preserve">nightstand</command>
+    <result xml:space="preserve">In the nightstand is a The Declaration of Independence..&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D707E0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D707E0">
+    <command xml:space="preserve">take the doi</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D70850"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D70850">
+    <command xml:space="preserve">spray the doi</command>
+    <result xml:space="preserve">You spray the The Declaration of Independence. with lemon juice to reveal a secret message&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02D708C0">
+    <command xml:space="preserve">take nightstand</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D70A10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D70A10">
+    <command xml:space="preserve">open nightstand</command>
+    <result xml:space="preserve">You open the nightstand, revealing a The Declaration of Independence.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D70A80"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D70A80">
+    <command xml:space="preserve">take declaration</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D70AF0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D70AF0">
+    <command xml:space="preserve">x declaraiton</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D70B60"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D70B60">
+    <command xml:space="preserve">x declaration</command>
+    <result xml:space="preserve">This object might contain hidden markings.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D70BD0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D70BD0">
+    <command xml:space="preserve">spray declaration</command>
+    <result xml:space="preserve">You spray the The Declaration of Independence with lemon juice to reveal a secret message&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02D70C40">
+    <command xml:space="preserve">spray bed</command>
+    <result xml:space="preserve">Don't waste your juice.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D70CB0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D70CB0">
+    <command xml:space="preserve">spray nightstand</command>
+    <result xml:space="preserve">Don't waste your juice.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D70D20"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D70D20">
+    <command xml:space="preserve">open nightstand</command>
+    <result xml:space="preserve">You open the nightstand, revealing a The Declaration of Independence.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D70D90"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D70D90">
+    <command xml:space="preserve">ake declaration</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D70E00"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D70E00">
+    <command xml:space="preserve">take declaration</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D70E70"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D70E70">
+    <command xml:space="preserve">spray declaration</command>
+    <result xml:space="preserve">You spray the The Declaration of Independence with lemon juice to reveal a secret message:You wot m8&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02D24768">
+    <command xml:space="preserve">open nightstand</command>
+    <result xml:space="preserve">You open the nightstand, revealing a spray bottle and a Declaration of Independence (declaration).&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D247D8"/>
+      <child nodeId="node-0x0B6383C8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D247D8">
+    <command xml:space="preserve">spray declaration</command>
+    <result xml:space="preserve">You need a spray bottle to do this.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D24848"/>
+      <child nodeId="node-0x0B6382E8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D24848">
+    <command xml:space="preserve">x self</command>
+    <result xml:space="preserve">As good-looking as ever.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0B6382E8">
+    <command xml:space="preserve">take spray bottle</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0B638358"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0B638358">
+    <command xml:space="preserve">spray declaration</command>
+    <result xml:space="preserve">You spray the Declaration of Independence (declaration) with lemon juice to reveal a secret message:"There is a secret message here, but Tyler doesn't know what it is yet&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0B6383C8">
+    <command xml:space="preserve">take spray bottle</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0B638438"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0B638438">
+    <command xml:space="preserve">spray declaration</command>
+    <result xml:space="preserve">You spray the Declaration of Independence (declaration) with lemon juice to reveal a secret message: &#x000A;"There is a secret message here, but Tyler doesn't know what it is yet"&#x000A;The spray bottle is now (90%) full.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0B6384A8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0B6384A8">
+    <command xml:space="preserve">spray declaration</command>
+    <result xml:space="preserve">Don't waste your juice.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02D24998">
+    <command xml:space="preserve">x self</command>
+    <result xml:space="preserve">You are Acadamy Award winner and national-treasure-fnder, Nicolas Cage.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02D24A08">
+    <command xml:space="preserve">x nightstnad</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D248B8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D248B8">
+    <command xml:space="preserve">x nightstand</command>
+    <result xml:space="preserve">An ancient greek nightstand where you keep your most valuable treasures.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D24928"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D24928">
+    <command xml:space="preserve">x bed</command>
+    <result xml:space="preserve">You see nothing special about the bed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02D24BC8">
+    <command xml:space="preserve">x bed</command>
+    <result xml:space="preserve">The bed is still unmade from last night's escapades.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D24B58"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D24B58">
+    <command xml:space="preserve">x nightstand</command>
+    <result xml:space="preserve">An ancient greek nightstand where you keep your most valuable treasures.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D24AE8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D24AE8">
+    <command xml:space="preserve">open nightstand</command>
+    <result xml:space="preserve">You open the nightstand, revealing a spray bottle and a Declaration of Independence (declaration).&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D24C38"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D24C38">
+    <command xml:space="preserve">x spray bottle</command>
+    <result xml:space="preserve">The bottle is full of lemon juice. Handy for finding clues.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D24CA8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D24CA8">
+    <command xml:space="preserve">x declaration</command>
+    <result xml:space="preserve">This object might contain hidden markings.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D24D18"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D24D18">
+    <command xml:space="preserve">take spray bottle</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D24D88"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D24D88">
+    <command xml:space="preserve">take declaration</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D24DF8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D24DF8">
+    <command xml:space="preserve">spray declaration</command>
+    <result xml:space="preserve">You spray the Declaration of Independence (declaration) with lemon juice to reveal a secret message: "You wot m8"&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D24E68"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D24E68">
+    <command xml:space="preserve">spray declaration</command>
+    <result xml:space="preserve">Don't waste your juice.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D24ED8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D24ED8">
+    <command xml:space="preserve">spray nightstand</command>
+    <result xml:space="preserve">Don't waste your juice.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D70EE0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D70EE0">
+    <command xml:space="preserve">take nightstand</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0B637F68"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0B637F68">
+    <command xml:space="preserve">close nightstand</command>
+    <result xml:space="preserve">You close the nightstand.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0B6380B8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0B6380B8">
+    <command xml:space="preserve">x bed</command>
+    <result xml:space="preserve">The bed is still unmade from last night's escapades.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0B638048"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0B638048">
+    <command xml:space="preserve">x nightstand</command>
+    <result xml:space="preserve">An ancient greek nightstand where you keep your most valuable treasures.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0B637FD8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0B637FD8">
+    <command xml:space="preserve">spray bed</command>
+    <result xml:space="preserve">Don't waste your juice.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>

@@ -1,17 +1,17 @@
 ! Blurb file created by Inform build 6L38
 
-status "C:\Program Files (x86)\Inform 7\Internal\Miscellany\CblorbModel.html" "C:\Users\Alex\Documents\GitHub\CMPS-148\Final Project\NictionalTreasure3.inform\Build\StatusCblorb.html"
+status "C:\Program Files (x86)\Inform 7\Internal\Miscellany\CblorbModel.html" "C:\Users\Tyler Gatta\Documents\GitHub\CMPS-148\Final Project\NictionalTreasure3.inform\Build\StatusCblorb.html"
 
 
 ! Identification
 
-project folder "C:\Users\Alex\Documents\GitHub\CMPS-148\Final Project\NictionalTreasure3.inform"
+project folder "C:\Users\Tyler Gatta\Documents\GitHub\CMPS-148\Final Project\NictionalTreasure3.inform"
 
 ! Blorb instructions
 
 storyfile leafname "NictionalTreasure3.gblorb"
-storyfile "C:\Users\Alex\Documents\GitHub\CMPS-148\Final Project\NictionalTreasure3.inform\Build\output.ulx" include
-ifiction "C:\Users\Alex\Documents\GitHub\CMPS-148\Final Project\NictionalTreasure3.inform\Metadata.iFiction" include
+storyfile "C:\Users\Tyler Gatta\Documents\GitHub\CMPS-148\Final Project\NictionalTreasure3.inform\Build\output.ulx" include
+ifiction "C:\Users\Tyler Gatta\Documents\GitHub\CMPS-148\Final Project\NictionalTreasure3.inform\Metadata.iFiction" include
 cover "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
 picture 1 "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
 
