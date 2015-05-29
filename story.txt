@@ -65,6 +65,7 @@ A nightstand is a closed container in the bedroom. "There is a nightstand by the
 [**PEOPLE**]
 Nick is a person. The printed name of Nick is "Nicolas Cage". The player is Nick. The description of Nick is "You are Acadamy Award winner and national-treasure-fnder, Nicolas Cage."
 Nick is in bedroom.
+Alex is a person. The description of Alex is "Someone who uses github like a pleb."
 
 [**VARIABLES**]
 SprayCapacity is a number variable. SprayCapacity is 100.
