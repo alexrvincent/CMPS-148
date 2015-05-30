@@ -7,7 +7,7 @@ When play begins:
 
 [**RULES**]
 A thing is either encrypted or decrypted.
-A room is either discovered or undiscovered.
+A room is either discovered or undiscovered.  A room is either an entrance or a main.
 Instead examining an encrypted thing: 
 	say "[description][line break]";
 	say "This object might contain hidden markings.";
@@ -16,6 +16,20 @@ Instead of asking Jon about something:
 	say "(Asking a specific character) [noun] - [the topic understood] - [the player's command][paragraph break]";
 	if the player's command includes "family": 
 		say "'Hey Luke, do you have any siblings?' you ask. [paragraph break]'I don't think so!' Luke replies."
+		
+Instead of examining Wax Clark:
+	say "There's nothing interesting about Clark. His placard reads 'Clark was was the lesser known of the two.  Clark was there to provide moral support - kind of like Robin to Batman. Nobody really cares about him beyond that.'".
+Instead of examining Wax Lewis:
+	say "You notice Wax Lewis is carrying a compass and decide to touch it. Upon touch, it immediate falls, but your Cage-reflexes quickly catches it. Upon closer examination of the compass, you discover it's just a fake replica. Damn it! That can't be all. In all of your Cage-rage, you notice the placard next to Wax Lewis. It reads [Paragraph Break] 'Lewis was brains behind the expedition. Carrying the compass, now located in the Smithsonian, Lewis discovered what would later be the entire rest of the United States. In his journal he wrote, It was just sitting there, the entire west portion of the United States. I'm surprised I was the first to find it.'[Paragraph Break] The Smithsonian? I guess that's where you'll need to head next.";
+	now the player has the wax compass.
+	
+Instead of going to the Smithsonian Upper Hall:
+	if the player is wearing the mask:
+		say "Right this way, sir.";
+		move the player to Smithsonian Upper Hall;
+	else:
+		say "I'm sorry mister Cage, but this is a restricted area".
+
 
 [**REGIONS/ROOMS**]
 
@@ -24,14 +38,19 @@ Las Vegas is a region. Bedroom, Lobby, and The Strip are in Las Vegas.
 Bedroom is a room. The printed name of Bedroom is "Las Vegas Home Bedroom".  The description of the Bedroom is "There is a lobby to the north."
 Lobby is a room. The printed name of Lobby is "Las Vegas Home Lobby". The description of Lobby is "The Strip is east of here." Lobby is north of Bedroom. 
 The Strip is a room. The Strip is east of Lobby.
-The Garage is a room. The Garage is west of the Lobby. The motorcycle is in the garage. The motorcycle is fixed in place.
+The Garage is a room. The Garage is west of the Lobby. The motorcycle is in the garage. The motorcycle is fixed in place. A cabinet is in the garage. A cabinet is a closed container. Inside the cabinet is a seven dollars.
 
-[Hollywood Region]
-Hollywood is a region. Hollywood Sign, Hollywood Boulevard, Chinese Theater and Wax Museum Lobby are in Hollywood.
+[Hollywood/Wax Museum Region]
+Hollywood is a region. Hollywood Sign, Hollywood Boulevard are in Hollywood.
 Hollywood Sign is a room.
 Hollywood Boulevard is a room. Hollywood Boulevard is south of Hollywood Sign.
-Chinese Theater is a room. Chinese Theater is south of Hollywood Boulevard.
+Wax Museum is a region. Wax Museum Lobby is in Wax Museum.
 Wax Museum Lobby is a room. Wax Museum Lobby is east of Hollywood Boulevard.
+Wax Museum West Hall is a room.  Wax Museum West Hall is a west of Wax Museum Lobby.  Wax  Oprah is in the Wax Museum West Hall. Wax George Clooney is in the Wax Museum West Hall.  Wax  Angelina Jolie is in the Wax Museum West Hall. 
+
+Wax Museum East Hall is a room. Wax Museum East Hall is east of Wax Museum Lobby. Wax John Travolta is in the Wax Museum East Hall. Wax Kim Kardashian is in the Wax Museum East Hall.  Wax Micheal Jackson is in the Wax Museum East Hall. 
+
+The steel trapdoor is a door. Wax Museum Storage is a room. Wax Museum Storage is below the steel trapdoor. The steel trapdoor is below the Wax Museum Lobby.  The steel trapdoor is locked. The wax museum key unlocks the steel trapdoor.  The wax museum key is in the Wax Museum Storage. Wax Lewis , Wax Clark is in the Wax Museum Storage. Wax George Bush is in the Wax Museum Storage. Wax Tom Cruise is in the Wax Museum Storage.
 
 [Indian Reservation]
 Indian Reservation is a region. Grassy Field and Old House Porch are in Indian Reservation.
@@ -39,8 +58,8 @@ Grassy Field is a room.
 Old House Porch is a room. Old House Porch is north of Grassy Field.
 
 [Somewhere in Texas]
-Somewhere in Texas is a region. Abandoned Saloon Porch is in Somewhere in Texas.
-Abandoned Saloon Porch is a room.
+Somewhere in Texas is a region. Luxurious House is in Somewhere in Texas.
+Luxurious House Porch is a room.
 
 [Gettysburg]
 Gettysburg is a region. Gettysburg Cemetary is in Gettysburg.
@@ -57,9 +76,14 @@ West Times Square is a room. West Times Square is west of Times Square Center.
 The Smithsonian is a region.
 Smithsonian Lobby is a room.
 Smithsonian Main Hall is a room. Smithsonian Main Hall is north of Smithsonian Lobby.
-Smithsonian Security Room is a room. Smithsonian Security Room is above Smithsonian Main Hall. 
+Smithsonian Upper Hall is a room. Smithsonian Upper Hall is above the Smithsonian Main Hall.
+Smithsonian Upper Corridor is a room. Smithsonian Upper Corridor is west of Smithsonian Upper Hall.  Smithsonian Upper Balcony is a room. Security Breakroom is west of Smithsonian Upper Corridor. Security Breakroom is a room. Smithsonian Upper Balcony is east of Smithsonian Upper Hall.
+Smithsonian Security Room is a room. Smithsonian Security Room is north of Smithsonian Upper Corridor.
 Smithsonian West Wing is a room. Smithsonian West Wing is west of Smithsonian Main Hall. 
 Smithsonian East Wing is a room. Smithsonian East Wing is east of Smithsonian Main Hall.
+Smithsonian Safe Room is a room.  Safe Door is a locked door. Safe Door is north of Smithsonian East Wing. Safe Door is south of Smithsonian Safe Room. The description of the Safe Door is "It's a solid meter of steel that doesn't have a key lock. It probably opens electronically from somewhere. But where?"
+
+The computer is inside the Smithsonian Security room. The description of the computer is "you can probably hack safe door from here, but it looks like you'll need a password to get in the system as to not rouse suspicision.". 
 
 [NullRoom - this is for storing secret objects . The player shouldn't have access to this room]
 NullRoom is a room.
@@ -69,29 +93,49 @@ NullRoom is a room.
 [Objects in Bedroom]
 A bed is in the bedroom. "A king sized bed with silk sheets takes up most of the room." The description of the bed is "The bed is still unmade from last night's escapades." The bed is fixed in place.
 A spray bottle is an object. The description of the spray bottle is "The bottle is full of lemon juice. Handy for finding clues."
-A torn out paper is an encrypted object. The description of torn out paper is "Page 47 from the president's secret book." 
+A torn out paper is an encrypted object. The description of torn out paper is "It's the Page 47 from the president's secret book in National Treasure 2." 
+A mask is an object.  The description of the mask is "It's a mask of John Travolta you stole from the Face/Off set. It's waxy accuracy to JT is eeriely similar". The mask is wearable.
 A  declaration is an object. The printed name of declaration is "Declaration of Independence (declaration)". The description of declaration is "You went back and stole this a second time after the filming of National Treasure 2."
 A nightstand is a closed container in the bedroom. "There is a nightstand by the side of the bed." The nightstand is openable and fixed in place. The description of the nightstand is "An ancient Greek nightstand where you keep your most valuable treasures." The declaration, torn out paper, and the spray bottle are in the nightstand. 
+A dresser is a closed container in the bedroom. "An exotic African dresser is also pushed up against the wall on the other side of your bed". The dresser is openable and fixed in place. The description of the dresser is "An old voodoo dresser said to once be a magical dresser that enchants clothing items." The mask is in the dresser.
 
+[Objects in Smithsonian]
+A glass case is in the Smithsonian Safe Room. The glass case is a container.  Inside the glass case is the ancient compass. The description of the glass case is "This is where the Smithsonian keeps the Lewis and Clark compass! The security alarm looks like it can be spoofed if you can keep something of equal size and weight in the glass case at all times".
+
+[Objects in NullRoom]
+An ancient compass is an object. The description of the ancient compass is "It's scrateched bronze coat comes off at your fingertips. This must point the way to the lost land of Oil! For some reason, it seems to point to ... somewhere in Texas? Maybe you should follow it."
+A security outfit is in the NullRoom. The description is "It's a kinky police officer outfit. I'm sure this might get me in the backdoor somewhere ( ͡° ͜ʖ ͡°)."
+A wax compass is in the NullRoom. The description of the wax compass is "It looks identical to the one Lewis and Clark used in weight and size, but it's nowhere near the real one."
 
 [**PEOPLE**]
-Nick is a person. The printed name of Nick is "Nicolas Cage". The player is Nick. The description of Nick is "You are Acadamy Award winner and national-treasure-finder, Nicolas Cage."
+Nick is a person. The printed name of Nick is "Nicolas Cage". The player is Nick. The description of Nick is "You are Acadamy Award winner, national-treasure-finder,  and panty-dropper, Nicolas Cage."
 Nick is in bedroom.
+Street Salesman is a person. The description of the Street Salesman is "it looks like he's selling a lot of knock-off film role outfits. He's selling a kinky police outfit for 10 bucks".  
 
-Jon Voight is a person. The description of Jon Voight is "He played the role of your grandfather in the first two National Treasure movies." Jon Voight is in The Strip.
+Jon Voight is a person. The description of Jon Voight is "He played the role of your father in the first two National Treasure movies." Jon Voight is in The Strip.
 
 [**VARIABLES**]
 SprayCapacity is a number variable. SprayCapacity is 100.
 
 [**ACTIONS**]
-Riding is an action applying to one thing. Understand "ride [something]" as riding.
-Carry out riding:
-	if the noun is the motorcycle:
-		say "sure";
-	else:
-		say "That doesn't really look ridable".
+Replacing is an action applying to one thing. Understand "replace [something]" as replacing.
+Carry out replacing:
+	if the noun is Wax John Travolta:
+		say "You quickly hide the Wax Travolta behind a curtain and, wearing your mask, take its place. You wait until closing as a security guard puts you into a box and hauls you down into storage. You quickly burst out, finding yourself in the Wax Museum storage.";
+		move the player to Wax Museum Storage;
+	if the noun is ancient compass:
+		say "You stealthily replace the compass with the wax one you found at the museum and put the real one in your pocket.";
+		now the wax compass is in the glass case;
+		now the player has the ancient compass;
+	else: 
+		say "Cage probably wouldn't do that. Maybe in a different film".
 		
-
+Hacking is an action applying to one thing. Understand "hack [something]" as hacking.
+Carry out hacking:
+	if the noun is the computer:
+		say "You enter the password and unlock the door downstairs";
+		now the Safe Door is unlocked.
+		
 [Region Travel]
 [Hardcoded traveling, because it's the only way to move between regions]
 Travelling1 is an action applying to nothing. Understand "travel to The Smithsonian" as travelling1.
@@ -122,7 +166,7 @@ Carry out travelling5:
 Travelling6 is an action applying to nothing. Understand "travel to texas" as travelling6.
 Understand "travel to Texas" as travelling6. 
 Carry out travelling6:
-		move the player to the abandoned saloon porch.
+		move the player to the Luxurious House Porch.
 
 Travelling7 is an action applying to nothing. Understand "travel to Times Square" as travelling7.
 Understand "travel to times square" as travelling7. Understand "travel to Times square" as travelling7. Understand "travel to times Square" as travelling7.
@@ -144,3 +188,5 @@ Report spraying:
 		say "[line break] You think to yourself, 'I better go to The Strip to ask Jon Voight about this clue.'";
 	else:
 		say "Default message, replace with clue";
+
+
