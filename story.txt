@@ -4,15 +4,22 @@
 
 [**RULES**]
 A thing is either encrypted or decrypted.
-Instead of examining an encrypted thing: say "This object might contain hidden markings."
+Instead examining an encrypted thing: 
+	say "[description][line break]";
+	say "This object might contain hidden markings.";
+	
+Instead of asking Jon about something:
+	say "(Asking a specific character) [noun] - [the topic understood] - [the player's command][paragraph break]";
+	if the player's command includes "family": 
+		say "'Hey Luke, do you have any siblings?' you ask. [paragraph break]'I don't think so!' Luke replies."
 
 [**REGIONS/ROOMS**]
 
 [Las Vegas Region]
 Las Vegas is a region. Bedroom, Lobby, and The Strip are in Las Vegas.
-Bedroom is a room. The printed name of Bedroom is "Las Vegas Home Bedroom".
-Lobby is a room. The printed name of Lobby is "Las Vegas Home Lobby". Lobby is north of Bedroom.
-The Strip is a room. The Strip is east of Las Vegas Home Lobby.
+Bedroom is a room. The printed name of Bedroom is "Las Vegas Home Bedroom".  The description of the Bedroom is "There is a lobby to the north."
+Lobby is a room. The printed name of Lobby is "Las Vegas Home Lobby". The description of Lobby is "The Strip is east of here." Lobby is north of Bedroom. 
+The Strip is a room. The Strip is east of Lobby.
 
 [Hollywood Region]
 Hollywood is a region. Hollywood Sign, Hollywood Boulevard, Chinese Theater and Wax Museum Lobby are in Hollywood.
@@ -58,14 +65,16 @@ NullRoom is a room.
 [Objects in Bedroom]
 A bed is in the bedroom. "A king sized bed with silk sheets takes up most of the room." The description of the bed is "The bed is still unmade from last night's escapades." The bed is fixed in place.
 A spray bottle is an object. The description of the spray bottle is "The bottle is full of lemon juice. Handy for finding clues."
-A declaration is an encrypted object. The printed name of declaration is "Declaration of Independence (declaration)". The description of declaration is,"You went back and stole this a second time after the filming of National Treasure 2."
-A nightstand is a closed container in the bedroom. "There is a nightstand by the side of the bed." The nightstand is openable and fixed in place. The description of the nightstand is "An ancient Greek nightstand where you keep your most valuable treasures." The declaration and the spray bottle are in the nightstand. 
+A torn out paper is an encrypted object. The description of torn out paper is "Page 47 from the president's secret book." 
+A  declaration is an object. The printed name of declaration is "Declaration of Independence (declaration)". The description of declaration is "You went back and stole this a second time after the filming of National Treasure 2."
+A nightstand is a closed container in the bedroom. "There is a nightstand by the side of the bed." The nightstand is openable and fixed in place. The description of the nightstand is "An ancient Greek nightstand where you keep your most valuable treasures." The declaration, torn out paper, and the spray bottle are in the nightstand. 
 
 
 [**PEOPLE**]
 Nick is a person. The printed name of Nick is "Nicolas Cage". The player is Nick. The description of Nick is "You are Acadamy Award winner and national-treasure-fnder, Nicolas Cage."
 Nick is in bedroom.
-Alex is a person. The description of Alex is "Someone who uses github like a pleb."
+
+Jon Voight is a person. The description of Jon Voight is "He played the role of your grandfather in the first two National Treasure movies." Jon Voight is in The Strip.
 
 [**VARIABLES**]
 SprayCapacity is a number variable. SprayCapacity is 100.
@@ -82,9 +91,9 @@ Carry out spraying:
 	now the noun is decrypted;
 	now SprayCapacity is SprayCapacity minus 10;
 Report spraying: 
-	say "You spray the [noun] with lemon juice to reveal a secret message: ";
-	if noun is declaration:
-		say "[line break]'There is a secret message here, but Tyler doesn't know what it is yet'";
-		say "[line break]The spray bottle is now ([SprayCapacity]%) full.";
+	say "You spray ([SprayCapacity]% remaining) the [noun] with lemon juice to reveal a secret message: ";
+	if noun is torn out paper:
+		say "[line break]'The American people have been lied to. America is not the land of prosperity, it’s the land of oil. Somewhere under this sacred land was buried millions of gallons of oil - oil to power a million hummers for a thousand years.  I will find it, with or without the help of the FBI.'";
+		say "[line break] You think to yourself, 'I better go to The Strip to ask Jon Voight about this clue.'";
 	else:
 		say "Default message, replace with clue";
