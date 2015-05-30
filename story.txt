@@ -1,9 +1,13 @@
-"NictionalTreasure3" by Alex Vincent & Tyler Gatta
+﻿"NictionalTreasure3" by Alex Vincent & Tyler Gatta
 
-[Test for the pushed file Tyler I did it]
+[Opening Line]
+
+When play begins:
+	say "Emerging in a drunken hangover from a wild party last night, you wake up in your king size bed in your extravagant apartment you walk up and go into your bathroom. Looking into the mirror you see a handsome slightly stubbled face. You are Nicolas Cage.  [Paragraph Break] In the kitchen sink you notice a letter, it's signed from your agent. You read it aloud [Paragraph Break]'Nic, I can't do this anymore. You've taken too many film roles and I feel like I'm selling out by just being associated with you.  In the past decade you haven't taken one decent role! I feel like I'm the only one who believed you could change, you know, take up a reality TV show or something. But no, you're at rock bottom. Worst of all, you've gambled away all your savings and that fucking casino! Bah, whatever. You're probably too drunk to even read this.  The bottom line is I'm through playing your mother. You've disappointed me for the last time, Cage. I quit . [Paragraph Break] 'He's right' you say to yourself. You're getting old and the bank account is beginning to run dry. What could  you do to change your agent's mind? [Paragraph Break]As you turn around you notice a National Treasure poster hanging above your bed. 'GATES!', you yell. [Paragraph Break] 'I'm going to write National Treasure 3'.  ".
 
 [**RULES**]
 A thing is either encrypted or decrypted.
+A room is either discovered or undiscovered.
 Instead examining an encrypted thing: 
 	say "[description][line break]";
 	say "This object might contain hidden markings.";
@@ -20,6 +24,7 @@ Las Vegas is a region. Bedroom, Lobby, and The Strip are in Las Vegas.
 Bedroom is a room. The printed name of Bedroom is "Las Vegas Home Bedroom".  The description of the Bedroom is "There is a lobby to the north."
 Lobby is a room. The printed name of Lobby is "Las Vegas Home Lobby". The description of Lobby is "The Strip is east of here." Lobby is north of Bedroom. 
 The Strip is a room. The Strip is east of Lobby.
+The Garage is a room. The Garage is west of the Lobby. The motorcycle is in the garage. The motorcycle is fixed in place.
 
 [Hollywood Region]
 Hollywood is a region. Hollywood Sign, Hollywood Boulevard, Chinese Theater and Wax Museum Lobby are in Hollywood.
@@ -38,8 +43,7 @@ Somewhere in Texas is a region. Abandoned Saloon Porch is in Somewhere in Texas.
 Abandoned Saloon Porch is a room.
 
 [Gettysburg]
-Gettysburg is a region. Gettysburg Museum and Gettysburg Battlefield are  in Gettysburg.
-
+Gettysburg is a region. Gettysburg Cemetary is in Gettysburg.
 
 [Times Square]
 Times Square is a region. Times Square Center, North Times Square , South Times Square, East Times Square, West Times Square  are in Times Square.
@@ -50,7 +54,7 @@ East Times Square is a room. East Times Square is east of Times Square Center.
 West Times Square is a room. West Times Square is west of Times Square Center.
 
 [Smithsonian]
-The Smithsonian is a region. Smithsonian Lobby, Smithsonian Main Hall, Smithsonian West Wing, Smithsonian East Wing are in The Smithsonian.
+The Smithsonian is a region.
 Smithsonian Lobby is a room.
 Smithsonian Main Hall is a room. Smithsonian Main Hall is north of Smithsonian Lobby.
 Smithsonian Security Room is a room. Smithsonian Security Room is above Smithsonian Main Hall. 
@@ -71,7 +75,7 @@ A nightstand is a closed container in the bedroom. "There is a nightstand by the
 
 
 [**PEOPLE**]
-Nick is a person. The printed name of Nick is "Nicolas Cage". The player is Nick. The description of Nick is "You are Acadamy Award winner and national-treasure-fnder, Nicolas Cage."
+Nick is a person. The printed name of Nick is "Nicolas Cage". The player is Nick. The description of Nick is "You are Acadamy Award winner and national-treasure-finder, Nicolas Cage."
 Nick is in bedroom.
 
 Jon Voight is a person. The description of Jon Voight is "He played the role of your grandfather in the first two National Treasure movies." Jon Voight is in The Strip.
@@ -80,9 +84,52 @@ Jon Voight is a person. The description of Jon Voight is "He played the role of 
 SprayCapacity is a number variable. SprayCapacity is 100.
 
 [**ACTIONS**]
-Traveling is an action applying to nothing.
+Riding is an action applying to one thing. Understand "ride [something]" as riding.
+Carry out riding:
+	if the noun is the motorcycle:
+		say "sure";
+	else:
+		say "That doesn't really look ridable".
+		
 
-[Comment in here]
+[Region Travel]
+[Hardcoded traveling, because it's the only way to move between regions]
+Travelling1 is an action applying to nothing. Understand "travel to The Smithsonian" as travelling1.
+Understand "travel to the smithsonian" as travelling1. Understand "travel to smithsonian" as travelling1. Understand "travel to Smithsonian" as travelling1.
+Carry out travelling1:
+		move the player to the smithsonian lobby.
+		
+Travelling2 is an action applying to nothing. Understand "travel to Las Vegas" as travelling2.
+Understand "travel to las vegas" as travelling2. Understand "travel to vegas" as travelling2. Understand "travel to Las vegas" as travelling2. Understand "travel to Vegas" as travelling2. 
+Carry out travelling2:
+		move the player to the lobby.
+		
+Travelling3 is an action applying to nothing. Understand "travel to Hollywood" as travelling3.
+Understand "travel to the hollywood" as travelling3. 
+Carry out travelling3:
+		move the player to Hollywood Sign.
+		
+Travelling4 is an action applying to nothing. Understand "travel to gettysburg" as travelling4.
+Understand "travel to Gettysburg" as travelling4. 
+Carry out travelling4:
+		move the player to the gettysburg cemetary.
+		
+Travelling5 is an action applying to nothing. Understand "travel to The Reservation" as travelling5.
+Understand "travel to the reservation" as travelling5. Understand "travel to reservation" as travelling5. Understand "travel to Reservation" as travelling5.
+Carry out travelling5:
+		move the player to the Grassy Field.
+
+Travelling6 is an action applying to nothing. Understand "travel to texas" as travelling6.
+Understand "travel to Texas" as travelling6. 
+Carry out travelling6:
+		move the player to the abandoned saloon porch.
+
+Travelling7 is an action applying to nothing. Understand "travel to Times Square" as travelling7.
+Understand "travel to times square" as travelling7. Understand "travel to Times square" as travelling7. Understand "travel to times Square" as travelling7.
+Carry out travelling7:
+		move the player to the Times Square Center.
+	
+
 Understand "spray [something]" as spraying. Spraying is an action applying to one thing. 
 Check spraying: 
 	if the player does not have the spray bottle, instead say "You need a spray bottle to do this.";
