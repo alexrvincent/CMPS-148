@@ -29,12 +29,26 @@ Instead of going to the Smithsonian Upper Hall:
 		move the player to Smithsonian Upper Hall;
 	else:
 		say "I'm sorry mister Cage, but this is a restricted area".
-
+		
+Instead of examining the bookshelf:
+	if PassageDiscovered is false:
+		say "You pull a book on the bookshelf releaving a hidden passage in the center of the room. Cage's clue sense are tingling. Maybe you should head down there.";
+		now PassageDiscovered is true;
+	else:
+		say "The bookshelf had a secret level that opened a passage way! Cage's clue sense are tingling. Maybe you should head down there.".
+		
+Instead of going to the Luxurious House Basement:
+	if PassageDiscovered is false:
+		say "You can't go that way.[Paragraph Break]";
+	else:
+		say "You crawl down the dusty opening and into a secret candle-lit basement filled with sprawling notes, books, journals and posters";
+		move the player to the Luxurious House Basement.
+		
 
 [**REGIONS/ROOMS**]
 
 [Las Vegas Region]
-Las Vegas is a region. Bedroom, Lobby, and The Strip are in Las Vegas.
+Las Vegas is a region. Bedroom, Lobby, and The Strip, The Garage are in Las Vegas. 
 Bedroom is a room. The printed name of Bedroom is "Las Vegas Home Bedroom".  The description of the Bedroom is "There is a lobby to the north."
 Lobby is a room. The printed name of Lobby is "Las Vegas Home Lobby". The description of Lobby is "The Strip is east of here." Lobby is north of Bedroom. 
 The Strip is a room. The Strip is east of Lobby.
@@ -59,10 +73,11 @@ Old House Porch is a room. Old House Porch is north of Grassy Field.
 
 [Somewhere in Texas]
 Somewhere in Texas is a region. Luxurious House is in Somewhere in Texas.
-Luxurious House Porch is a room.
+Luxurious House Porch is a room. Luxurious House Living Room is a room. Luxurious House Living Room is north of Luxurious House Porch. Luxurious House Bedroom is a room.  Luxurious House Bedroom is west of  Luxurious House Living Room.  Luxurious House Bathroom is a room. Luxurious House Bathroom is east of Luxurious House Living Room. Luxurious House Basement is a room.  Luxurious House Basement is below Luxurious House Bedroom. 
 
 [Gettysburg]
-Gettysburg is a region. Gettysburg Cemetary is in Gettysburg.
+Gettysburg is a region. Gettysburg Front Lawn is a room. Gettysburg Cemetary is in Gettysburg.
+
 
 [Times Square]
 Times Square is a region. Times Square Center, North Times Square , South Times Square, East Times Square, West Times Square  are in Times Square.
@@ -102,6 +117,9 @@ A dresser is a closed container in the bedroom. "An exotic African dresser is al
 [Objects in Smithsonian]
 A glass case is in the Smithsonian Safe Room. The glass case is a container.  Inside the glass case is the ancient compass. The description of the glass case is "This is where the Smithsonian keeps the Lewis and Clark compass! The security alarm looks like it can be spoofed if you can keep something of equal size and weight in the glass case at all times".
 
+[Objects at Bush's House]
+A bookshelf is in the Luxurious House Bedroom. 
+
 [Objects in NullRoom]
 An ancient compass is an object. The description of the ancient compass is "It's scrateched bronze coat comes off at your fingertips. This must point the way to the lost land of Oil! For some reason, it seems to point to ... somewhere in Texas? Maybe you should follow it."
 A security outfit is in the NullRoom. The description is "It's a kinky police officer outfit. I'm sure this might get me in the backdoor somewhere ( ͡° ͜ʖ ͡°)."
@@ -116,6 +134,7 @@ Jon Voight is a person. The description of Jon Voight is "He played the role of 
 
 [**VARIABLES**]
 SprayCapacity is a number variable. SprayCapacity is 100.
+PassageDiscovered is a truth state that varies. PassageDiscovered is false.
 
 [**ACTIONS**]
 Replacing is an action applying to one thing. Understand "replace [something]" as replacing.
@@ -156,7 +175,7 @@ Carry out travelling3:
 Travelling4 is an action applying to nothing. Understand "travel to gettysburg" as travelling4.
 Understand "travel to Gettysburg" as travelling4. 
 Carry out travelling4:
-		move the player to the gettysburg cemetary.
+		move the player to the gettysburg front lawn.
 		
 Travelling5 is an action applying to nothing. Understand "travel to The Reservation" as travelling5.
 Understand "travel to the reservation" as travelling5. Understand "travel to reservation" as travelling5. Understand "travel to Reservation" as travelling5.
@@ -188,5 +207,7 @@ Report spraying:
 		say "[line break] You think to yourself, 'I better go to The Strip to ask Jon Voight about this clue.'";
 	else:
 		say "Default message, replace with clue";
+
+
 
 
