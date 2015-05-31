@@ -11,7 +11,12 @@ A room is either discovered or undiscovered.  A room is either an entrance or a 
 Instead examining an encrypted thing: 
 	say "[description][line break]";
 	say "This object might contain hidden markings.";
-	
+
+Before going north:
+	if preparation is happening:
+		say "Aren't you forgetting something?";
+		stop;
+
 Instead of asking Jon about something:
 	[say "(Asking a specific character) [noun] - [the topic understood] - [the player's command][paragraph break]";]
 	if the topic understood includes "paper": 
@@ -54,9 +59,9 @@ Instead of going to the Luxurious House Basement:
 [**REGIONS/ROOMS**]
 
 [Las Vegas Region]
-Las Vegas is a region. Bedroom, Lobby, and The Strip, The Garage are in Las Vegas. 
+Las Vegas is a region. Bedroom, Lobby, The Strip, The Garage are in Las Vegas.
 Bedroom is a room. The printed name of Bedroom is "Las Vegas Home Bedroom".  The description of the Bedroom is "There is a lobby to the north."
-Lobby is a room. The printed name of Lobby is "Las Vegas Home Lobby". The description of Lobby is "The Strip is east of here, the Garage is west of here." Lobby is north of Bedroom. 
+Lobby is a room. The printed name of Lobby is "Las Vegas Home Lobby". The description of Lobby is "The Strip is east of here, the Garage is west of here." Lobby is north of Bedroom.
 The Strip is a room. The Strip is east of Lobby.
 The Garage is a room. "An old place to store your motorcycle. The lobby is to the east."  The Garage is west of the Lobby. The motorcycle is in the garage. The motorcycle is fixed in place. A cabinet is in the garage. The cabinet is fixed in place. A cabinet is a closed container. Inside the cabinet is a seven dollars.
 
@@ -66,9 +71,9 @@ Hollywood Sign is a room.
 Hollywood Boulevard is a room. Hollywood Boulevard is south of Hollywood Sign.
 Wax Museum is a region. Wax Museum Lobby is in Wax Museum.
 Wax Museum Lobby is a room. Wax Museum Lobby is east of Hollywood Boulevard.
-Wax Museum West Hall is a room.  Wax Museum West Hall is a west of Wax Museum Lobby.  Wax  Oprah is in the Wax Museum West Hall. Wax George Clooney is in the Wax Museum West Hall.  Wax  Angelina Jolie is in the Wax Museum West Hall. 
+Wax Museum West Hall is a room.  Wax Museum West Hall is a west of Wax Museum Lobby. 
 
-Wax Museum East Hall is a room. Wax Museum East Hall is east of Wax Museum Lobby. Wax John Travolta is in the Wax Museum East Hall. Wax Kim Kardashian is in the Wax Museum East Hall.  Wax Micheal Jackson is in the Wax Museum East Hall. 
+Wax Museum East Hall is a room. Wax Museum East Hall is east of Wax Museum Lobby. 
 
 The steel trapdoor is a door. Wax Museum Storage is a room. Wax Museum Storage is below the steel trapdoor. The steel trapdoor is below the Wax Museum Lobby.  The steel trapdoor is locked. The wax museum key unlocks the steel trapdoor.  The wax museum key is in the Wax Museum Storage. Wax Lewis , Wax Clark is in the Wax Museum Storage. Wax George Bush is in the Wax Museum Storage. Wax Tom Cruise is in the Wax Museum Storage.
 
@@ -132,6 +137,11 @@ A  declaration is an object. The printed name of declaration is "Declaration of 
 A nightstand is a closed container in the bedroom. "There is a nightstand by the side of the bed." The nightstand is openable and fixed in place. The description of the nightstand is "An ancient Greek nightstand where you keep your most valuable treasures." The declaration, torn out paper, and the spray bottle are in the nightstand. 
 A dresser is a closed container in the bedroom. "An exotic African dresser is also pushed up against the wall on the other side of your bed". The dresser is openable and fixed in place. The description of the dresser is "An old voodoo dresser said to once be a magical dresser that enchants clothing items." The mask is in the dresser.
 
+[Objects in Wax Museum]
+ Wax  Oprah is in the Wax Museum West Hall. Wax George Clooney is in the Wax Museum West Hall.  Wax  Angelina Jolie is in the Wax Museum West Hall. 
+
+Wax John Travolta is in the Wax Museum East Hall. Wax Kim Kardashian is in the Wax Museum East Hall.  Wax Micheal Jackson is in the Wax Museum East Hall. 
+
 [Objects in Smithsonian]
 A glass case is in the Smithsonian Safe Room. The glass case is a container.  Inside the glass case is the ancient compass. The description of the glass case is "This is where the Smithsonian keeps the Lewis and Clark compass! The security alarm looks like it can be spoofed if you can keep something of equal size and weight in the glass case at all times".
 
@@ -155,7 +165,21 @@ SprayCapacity is a number variable. SprayCapacity is 100.
 PassageDiscovered is a truth state that varies. PassageDiscovered is false.
 
 [**SCENES**]
-Preparation is a scene. Preparation begins when play begins. Preparation ends when SprayCapacity is 90.
+[Goal: Reveal clue on page 47] Preparation is a scene. Preparation begins when play begins. 
+	Preparation ends when SprayCapacity is 90.
+[Goal: talk with Jon, get to Wax Museum] WaxPlot1 is a scene. WaxPlot1 begins when Preparation ends.
+	WaxPlot1 ends when Nick is in Wax Museum Lobby.
+[Goal: get to Storage room] WaxPlot2 is a scene. WaxPlot2 begins when WaxPlot1 ends. 
+	WaxPlot2 ends when the time since WaxPlot2 began is 15 minutes.
+[Get key and unlock trapdoor, travel to smithsonian] WaxPlot3 is a scene. WaxPlot3 begins when Nick is in Wax Museum Storage. 
+	WaxPlot3 ends when Nick is in Smithsonian Lobby.
+	
+	SmithPlot1 is a scene. SmithPlot1 begins when WaxPlot3 ends.
+
+When WaxPlot2 ends:
+	say "You overhear someone say, 'I hear that they keep extra figures in the back, but the security is so tight you'd have to be made of wax to get in.";
+
+
 
 [**ACTIONS**]
 Replacing is an action applying to one thing. Understand "replace [something]" as replacing.
@@ -213,7 +237,6 @@ Understand "travel to times square" as travelling7. Understand "travel to Times 
 Carry out travelling7:
 		move the player to the Times Square Center.
 
-
 Understand "spray [something]" as spraying. Spraying is an action applying to one thing. 
 Check spraying: 
 	if the player does not have the spray bottle, instead say "You need a spray bottle to do this.";
@@ -224,7 +247,7 @@ Carry out spraying:
 	now the noun is decrypted;
 	now SprayCapacity is SprayCapacity minus 10;
 
-		
+
 Report spraying: 
 	say "You spray ([SprayCapacity]% remaining) the [noun] with lemon juice to reveal a secret message: ";
 	if noun is torn out paper:
