@@ -3,7 +3,7 @@
 [Opening Line]
 
 When play begins:
-	say "Emerging in a drunken hangover from a wild party last night, you wake up in your king size bed in your extravagant apartment you walk up and go into your bathroom. Looking into the mirror you see a handsome slightly stubbled face. You are Nicolas Cage.  [Paragraph Break] In the kitchen sink you notice a letter, it's signed from your agent. You read it aloud [Paragraph Break]'Nic, I can't do this anymore. You've taken too many film roles and I feel like I'm selling out by just being associated with you.  In the past decade you haven't taken one decent role! I feel like I'm the only one who believed you could change, you know, take up a reality TV show or something. But no, you're at rock bottom. Worst of all, you've gambled away all your savings and that fucking casino! Bah, whatever. You're probably too drunk to even read this.  The bottom line is I'm through playing your mother. You've disappointed me for the last time, Cage. I quit . [Paragraph Break] 'He's right' you say to yourself. You're getting old and the bank account is beginning to run dry. What could  you do to change your agent's mind? [Paragraph Break]As you turn around you notice a National Treasure poster hanging above your bed. 'GATES!', you yell. [Paragraph Break] 'I'm going to write National Treasure 3'.  ".
+	say "Emerging in a drunken hangover from a wild party last night, you wake up in your king size bed in your extravagant apartment. You get up and go into your bathroom. Looking into the mirror, you see a handsome, slightly stubbled face. You are Nicolas Cage.  [Paragraph Break] In the bathroom sink you notice a letter; it's signed from your agent. You read it aloud :[Paragraph Break]'Nic, I can't do this anymore. You've taken too many film roles and I feel like I'm selling out just by being associated with you.  In the past decade you haven't taken one decent role! I feel like I'm the only one who believed you could change, you know, take up a reality TV show or something. But no, you're at rock bottom. Worst of all, you've gambled away all your savings at that fucking casino! Bah, whatever. You're probably too drunk to even read this.  The bottom line is I'm through playing your mother. You've disappointed me for the last time, Cage. I quit. [Paragraph Break] 'He's right', you say to yourself. You're getting old and the bank account is beginning to run dry. What could  you do to change your agent's mind? [Paragraph Break]As you turn around you notice a National Treasure poster hanging above your bed. 'GATES!', you yell. Grabbing your camcorder from your bed and turn around and say truimphantly: [Paragraph Break] 'I'm going to film National Treasure 3'[Paragraph Break] ".
 
 [**RULES**]
 A thing is either encrypted or decrypted.
@@ -56,9 +56,9 @@ Instead of going to the Luxurious House Basement:
 [Las Vegas Region]
 Las Vegas is a region. Bedroom, Lobby, and The Strip, The Garage are in Las Vegas. 
 Bedroom is a room. The printed name of Bedroom is "Las Vegas Home Bedroom".  The description of the Bedroom is "There is a lobby to the north."
-Lobby is a room. The printed name of Lobby is "Las Vegas Home Lobby". The description of Lobby is "The Strip is east of here." Lobby is north of Bedroom. 
+Lobby is a room. The printed name of Lobby is "Las Vegas Home Lobby". The description of Lobby is "The Strip is east of here, the Garage is west of here." Lobby is north of Bedroom. 
 The Strip is a room. The Strip is east of Lobby.
-The Garage is a room. The Garage is west of the Lobby. The motorcycle is in the garage. The motorcycle is fixed in place. A cabinet is in the garage. A cabinet is a closed container. Inside the cabinet is a seven dollars.
+The Garage is a room. "An old place to store your motorcycle. The lobby is to the east."  The Garage is west of the Lobby. The motorcycle is in the garage. The motorcycle is fixed in place. A cabinet is in the garage. The cabinet is fixed in place. A cabinet is a closed container. Inside the cabinet is a seven dollars.
 
 [Hollywood/Wax Museum Region]
 Hollywood is a region. Hollywood Sign, Hollywood Boulevard are in Hollywood.
@@ -82,7 +82,19 @@ Somewhere in Texas is a region. Luxurious House is in Somewhere in Texas.
 Luxurious House Porch is a room. Luxurious House Living Room is a room. Luxurious House Living Room is north of Luxurious House Porch. Luxurious House Bedroom is a room.  Luxurious House Bedroom is west of  Luxurious House Living Room.  Luxurious House Bathroom is a room. Luxurious House Bathroom is east of Luxurious House Living Room. Luxurious House Basement is a room.  Luxurious House Basement is below Luxurious House Bedroom. 
 
 [Gettysburg]
-Gettysburg is a region. Gettysburg Front Lawn is a room. Gettysburg Cemetary is in Gettysburg.
+Gettysburg is a region. Gettysburg Front Lawn is a room.    
+Row 1-1 is a room. Row 1-1 is north of Gettysburg Front Lawn. Row 1-2 is a room. Row 1-2 is east of Row 1-1. Row 1-3 is a room. Row 1-3 is east of Row 1-2. Row 1-4 is a room. Row 1-4 is east of Row 1-3. Row 1-5 is a room. Row 1-5 is east of Row 1-4. 
+
+Row 2-1 is a room. Row 2-1 is north of Row 1-1. Row 2-2 is a room. Row 2-2 is east of Row 2-1. Row 2-3 is a room. Row 2-3 is east of Row 2-2. Row 2-4 is a room. Row 2-4 is east of Row 2-3. Row 2-5 is a room. Row 2-5 is east of Row 2-4. 
+
+Row 3-1 is a room. Row 3-1 is north of Row 2-1. Row 3-2 is a room. Row 3-2 is east of Row 3-1. Row 3-3 is a room. Row 3-3 is east of Row 3-2. Row 3-4 is a room. Row 3-4 is east of Row 3-3. Row 3-5 is a room. Row 3-5 is east of Row 3-4. 
+
+Row 4-1 is a room. Row 4-1 is north of Row 3-1.  Row 4-2 is a room. Row 4-2 is east of Row 4-1. Row 4-3 is a room. Row 4-3 is east of Row 4-2. Row 4-4 is a room. Row 4-4 is east of Row 4-3. Row 4-5 is a room. Row 4-5 is east of Row 4-4. 
+
+Row 5-1 is a room. Row 5-1 is north of Row 4-1. Row 5-2 is a room. Row 5-2 is east of Row 5-1. Row 5-3 is a room. Row 5-3 is east of Row 5-2. Row 5-4 is a room. Row 5-4 is east of Row 5-3. Row 5-5 is a room. Row 5-5 is east of Row 5-4. 
+
+
+Row 5-2 is north of Row 4-2.  Row 4-2 is north of Row 3-2. Row 3-2 is north of Row 2-2. Row 2-2 is north of Row 1-2. Row 5-3 is north of Row 4-3.  Row 4-3 is north of Row 3-3. Row 3-3 is north of Row 2-3. Row 2-3 is north of Row 1-3. Row 5-4 is north of Row 4-4.  Row 4-4 is north of Row 3-4. Row 3-4 is north of Row 2-4. Row 2-4 is north of Row 1-4. Row 5-5 is north of Row 4-5.  Row 4-5 is north of Row 3-5. Row 3-5 is north of Row 2-5. Row 2-5 is north of Row 1-5. 
 
 
 [Times Square]
@@ -220,7 +232,3 @@ Report spraying:
 		say "[line break] You think to yourself, 'I better go to The Strip to ask Jon Voight about this clue.'";
 	else:
 		say "Default message, replace with clue";
-
- 
-
-
