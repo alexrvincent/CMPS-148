@@ -1,9 +1,9 @@
-﻿"NictionalTreasure3" by Alex Vincent & Tyler Gatta
+﻿"National Treasure 3: The Golden Age of Nicolas Cage" by Alex Vincent & Tyler Gatta
 
 [Opening Line]
 
 When play begins:
-	say "Emerging in a drunken hangover from a wild party last night, you wake up in your king size bed in your extravagant apartment. You get up and walk over to your body mirror. Looking into the mirror, you see a handsome, slightly stubbled face. You are Nicolas Cage.  [Paragraph Break] On your nightstand you notice a letter; it's signed from your agent. You read it aloud :[Paragraph Break]'Nic, I can't do this anymore. You've taken too many film roles and I feel like I'm selling out just by being associated with you.  In the past decade you haven't taken one decent role! I feel like I'm the only one who believed you could change, you know, take up a reality TV show or something. But no, you're at rock bottom. You've gambled away all your savings at that casino and worst of all you still won't take off your fucking shoes ever! It's disgusting! Bah, whatever. You're probably too drunk to even read this.  The bottom line is I'm through playing your mother. You've disappointed me for the last time, Cage. I quit. [Paragraph Break] 'He's right', you say to yourself. You're getting old and the bank account is beginning to run dry. What could  you do to change your agent's mind? You must have at least one role that people should remember you for!  [Paragraph Break]As you turn around you notice a National Treasure poster hanging above your bed. 'GATES!', you yell.  Grabbing your camcorder from your bed, you turn around and say truimphantly: [Paragraph Break] 'I'm going to film National Treasure 3'[Paragraph Break] ".
+	say "Emerging in a drunken hangover from a wild party last night, you wake up in your king-sized bed in your extravagant house. You get up and walk over to your body mirror. Looking into the mirror, you see a handsome, slightly stubbled face. You are Nicolas Cage.  [Paragraph Break] On your nightstand you notice a letter; it's signed from your agent. You read it aloud :[Paragraph Break]'Nic, I can't do this anymore. You've taken too many film roles and I feel like I'm selling out just by being associated with you.  In the past decade you've made more terrible films than Adam Sandler could in a lifetime! I feel like I'm the only one who believed you could change, Cage. But no, you're at sellout rock bottom. I mean Left Behind, come on! Now I hear you've gambled away all your savings at that casino and, worst of all, you turned down that foot commercial because you wouldn't take off those fucking shoes you've been wearing for 50 years? Let's face it Cage, you're a washed up nobody now. Your Golden Age of 'Leaving Las Vegas', and 'Con Air' are behind you. The bottom line is, I don't feel like you're a worthwhile investment anymore. You've disappointed me for the last time, Cage. I quit.'[Paragraph Break] 'That bastard!, you say to yourself. What does he know about talent? And what's he talking about, you're in your Golden Age! Aww, who are you kidding. Ever since Vampire's Kiss it's been all downhill.  But what could you do to change your agent's mind? To change the world's mind? You must have at least one role that people should remember you for!  [Paragraph Break]As you turn around you notice a National Treasure poster hanging above your bed. 'That's it!', you yell. 'I'm going to show my agent I'm still in my golden age. I'm going to show the world that actor-producer Nicolas Cage isn't ready to become a nobody just yet!' Grabbing your camcorder from your bed, you turn around and say truimphantly: [Paragraph Break] 'I'm going to film National Treasure 3.'[Paragraph Break] ".
 
 [**RULES**]
 A thing is either encrypted or decrypted. 
@@ -61,11 +61,11 @@ Instead of examining Wax Oprah:
 Instead of examining Wax Clark:
 	say "There's nothing interesting about Clark. His placard reads 'Clark was was the lesser known of the two.  Clark was there to provide moral support - kind of like Robin to Batman. Nobody really cares about him beyond that.'".
 Instead of examining Wax Lewis:
-	say "You notice Wax Lewis is carrying a compass and decide to touch it. Upon touch, it immediate falls, but your Cage-reflexes quickly catches it. Upon closer examination of the compass, you discover it's just a fake replica. [Paragraph Break]Damn it! That can't be all. In all of your Cage-rage, you notice the placard next to Wax Lewis. It reads [Paragraph Break] 'Lewis was brains behind the expedition. Their compass, now located in the Smithsonian, lead Lewis to discover what would later be the entire rest of the United States. In his journal he wrote, 'It was just sitting there, the entire west portion of the United States. I'm surprised I was the first to find it.'[Paragraph Break] It looks like the Cage is going to have to break into the Smithonian.";
+	say "You notice Wax Lewis is carrying a compass and decide to touch it. Upon touch, it immediate falls, but your Cage-reflexes quickly catches it. Upon closer examination of the compass, you discover it's just a fake replica. [Paragraph Break]Damn it! That can't be all. You notice the placard next to Wax Lewis. It reads [Paragraph Break] 'Lewis was brains behind the expedition. Their compass, now located in the Smithsonian, lead Lewis to discover what would later be the entire rest of the United States. In his journal he wrote, 'It was just sitting there, the entire west portion of the United States. I'm surprised I was the first to find it.'[Paragraph Break] It looks like the Cage is going to have to break into the Smithonian.";
 	now the player has the wax compass.
 	
 Instead of taking the ancient compass:
-	say "The security alarm will go off if you take this! Perhaps there is some way to trick the alarm on the case it's in."
+	say "The security alarm will go off if you take this! Perhaps there is some way to trick the alarm on the case."
 	
 Instead of dropping the ancient compass:
 	say "Cage wouldn't drop this. Maybe in a different film."
@@ -75,36 +75,36 @@ Instead of going to the Smithsonian Upper Hall:
 		say "[Paragraph Break] The security guard tips his hat to you, letting you pass. You climb the stairs and enter the upper hall of the Smithsonian.";
 		move the player to Smithsonian Upper Hall;
 	else:
-		say "[Paragraph Break]The security guard puts his hand out, stopping you from entering. He says 'I'm sorry mister Cage, but this is a restricted area, only staff are allowed to pass'. [Paragraph Break]".
+		say "[Paragraph Break]The security guard puts his hand out, stopping you from entering. He says 'I'm sorry mister Cage, but this is a restricted area. Only staff are allowed to pass'. [Paragraph Break]It looks like you'll need some kind of disguise to pass.".
 		
 Instead of wearing the security outfit:
 	if the player is not in the Smithsonian Bathroom:
 		say "[Paragraph Break] You can't change in public! Cage has self-esteem issues. Maybe a private room would be more suitable to switch into your disguise.";
 	if the player is in the Smithsonian Bathroom:
-		say "[Paragraph Break] You slip into the security guard outfit. It's a little tight, but it'll do.";
+		say "[Paragraph Break] You slip into the security guard outfit. It's a little tight, but it'll do. Lets see if where this can take you.";
 		now the player is wearing the security outfit.
 	
 Instead of taking off the security outfit:
-	say "You decide to keep the outfit on, as serves a great disguise".
+	say "You decide to keep the outfit on, as it serves as a great disguise".
 	
 Instead of examining the Surveillance Officer:
 	if GuardKO is false:
-		say "The officer is laying back in his chair with his feet kicked up on the keyboards. It looks like you'll have to surprise him with a sneak attack before you can hack the computer station.";
+		say "The officer is laying back in his chair with his feet kicked up on the keyboards. It looks like you'll have to surprise him before you can hack the computer station. He's pretty big, so it might be smart to make sure you're equipped with some sort of sharp object in case things get hairy.";
 	else:
-		say "The officer is sprawled on the floor, unconcious, with a giant plunger suction stuck to his face".
+		say "The officer is sprawled on the floor, unconcious, with a giant plunger suction stuck to his face.".
 		
 Instead of examining the bookshelf:
 	if PassageDiscovered is false:
-		say "The bookshelf is filled with self-help books and cook books. A book on the Oil Crisis seems oddly placed on the shelf. As you go to pull it down, you hear a switching sound, revealing a hidden passage in the center of the room. Cage's clue sense are tingling. Maybe you should head down there.";
+		say "The bookshelf is filled with self-help books and cook books. A book on the Oil Crisis seems oddly placed on the shelf. As you go to pull it down, you hear a switching sound, revealing a hidden passage in the center of the room. Cage's clue sense are tingling. [Paragraph Break] Maybe you should head down there.";
 		now PassageDiscovered is true;
 	else:
-		say "The bookshelf had a secret level that opened a passage way! Cage's clue sense are tingling. Maybe you should head down there.".
+		say "The bookshelf had a secret lever that opened a passage way! Cage's clue sense are tingling. Maybe you should head down there.".
 		
 Instead of going to the Luxurious House Basement:
 	if PassageDiscovered is false:
 		say "You can't go that way.[Paragraph Break]";
 	else:
-		say "You crawl down the dusty opening and into a secret candle-lit basement filled with sprawling notes, books, journals and posters";
+		say "You crawl down the dusty opening and into a secret candle-lit basement filled with sprawling notes, books, journals and posters.";
 		move the player to the Luxurious House Basement.
 		
 Instead of opening the stone coffin:
@@ -132,13 +132,13 @@ Instead of going to James Bush's Chamber:
 		say "As you place your hand on the door, it opens! Your Cage-mind has cracked the ancient Bush puzzle, knowing it was 5-1T, 2-4U, 3-2U, 4-5T, 1-3T all along! You brace yourself as you enter the crypt of great grand daddy Bush.";
 		move the player to James Bush's Chamber;
 	else:
-		say "You try to open the cathedral hatchet, but fail. There must be some other way to open it.".
+		say "You try to open the cathedral hatchet, but fail. There must be some other way to open it. You Cage senses deduce it probably has something to do with the tombstones.".
 	
 [**REGIONS/ROOMS**]
 
 [Las Vegas Region]
 Las Vegas is a region. Bedroom, Lobby, The Strip, The Garage are in Las Vegas.
-Bedroom is a room. The printed name of Bedroom is "Las Vegas Home Bedroom".  The description of the Bedroom is "Nic Cage's extravagant crash and dash pad. He's pleased many-a-person here in this red silk-covered room. There is a lobby to the north."
+Bedroom is a room. The printed name of Bedroom is "Las Vegas Home Bedroom".  The description of the Bedroom is "Nic Cage's extravagant crash and dash pad. He's pleased many-a-person here in this red silk-covered room. There is the house Lobby is to the north."
 Lobby is a room.  The Lobby is an entrance. The printed name of Lobby is "Las Vegas Home Lobby". The description of Lobby is "The entrance to Cage's multi-million dollar house. The Las Vegas Strip is east of here, and the house Garage is west of here." Lobby is north of Bedroom.
 The Strip is a room. The Strip is east of Lobby. The description of the Strip is "A long road of drunk people, homeless people, and people hoping to win it all. Jon Voight is sitting on a bench reading the newspaper."
 The Garage is a room. "Cage's rag-and-tag workshop. He uses this place to store the Phantom Rider. The lobby is to the east of here."  The Garage is west of the Lobby. 
@@ -147,12 +147,12 @@ The Garage is a room. "Cage's rag-and-tag workshop. He uses this place to store 
 Hollywood is a region. Hollywood Sign, Hollywood Boulevard are in Hollywood.
 Hollywood Sign is a room. The description of the Hollywood Sign is "The famous white-billboarded Hollywood sign. There is nothing here other than broken dreams. Hollywood Boulevard is south of here." 
 Hollywood Boulevard is a room. Hollywood Boulevard is south of Hollywood Sign. The description of Hollywood Boulevard is "The street everyone wants to get their name on. A giant piece of feces is smeared over Cage's star. They don't understand true talent. The Hollywood Wax Museum is to the east of here.". 
-Cage's Star is in Hollywood Boulevard. The description of Cage's Star is "Someone's feces covers the letters, with only 'NIL CGE' showing. Tourists and paparazzi crowd around you, taking pictures of the star. Your agent must have done this. That judas bastard. You'll prove him wrong. You'll prove him wrong if your name isn't Nicolas Kim Co... Nicolas Cage.".
+Cage's Star is in Hollywood Boulevard. The description of Cage's Star is "Someone's feces covers the letters, with only 'NIL CGE' showing.  In the feces, the letters 'BSH' is written over it. Tourists and paparazzi crowd around you, taking pictures of the star. Your agent must have done this. That judas bastard. You'll prove him wrong. You'll prove him wrong if your name isn't Nicolas Kim Cop... Nicolas Cage.".
 Wax Museum is a region. Wax Museum Lobby is in Wax Museum.
-Wax Museum Lobby is a room. The description of the Wax Museum lobby is "A crowded red-carpeted room with a series of braided gold cords hanging from the ceiling. There is a reception desk here but nobody seems to be at it. There is a steel trapdoor in the corner. To the west is the west hall and to the east is the east hall."Wax Museum Lobby is east of Hollywood Boulevard.
+Wax Museum Lobby is a room. The description of the Wax Museum lobby is "A crowded red-carpeted room with a series of braided gold cords suspended in decoration. There are too many tourists to be able to see much, but you notice there is a steel trapdoor in the corner. To the west is the west hall and to the east is the east hall."Wax Museum Lobby is east of Hollywood Boulevard.
 Wax Museum West Hall is a room.  The description of the Wax Museum West Hall is "The west hall of the Wax Museum keeps half of the wax statues on display here. There are some tourists here talking about something you can't quite make out. You could probably hear it better if you listened in. The Wax Museum Lobby is to the east". Wax Museum West Hall is a west of Wax Museum Lobby. 
-Wax Museum East Hall is a room. Wax Museum East Hall is east of Wax Museum Lobby. The description of the Wax Museum East Hall is "The east hall of the Wax Museum keeps hald of the wax statues on display here. The Was Museum Lobby is to the west."
-The steel trapdoor is a door. Wax Museum Storage is a room. Wax Museum Storage is below the steel trapdoor. The steel trapdoor is below the Wax Museum Lobby.  The steel trapdoor is locked. The wax museum key unlocks the steel trapdoor.  The description of the steel trapdoor is "It's a steel door with the word 'STORAGE' written on it. It looks like it leads downward into a cellar of some sort.". The description of the Wax Museum Storage is "A dark and musty cellar where the Museum keeps the figures that aren't on display or figures that they plan to donate."
+Wax Museum East Hall is a room. Wax Museum East Hall is east of Wax Museum Lobby. The description of the Wax Museum East Hall is "The east hall of the Wax Museum keeps half of the wax statues on display here. The Was Museum Lobby is to the west."
+The steel trapdoor is a door. Wax Museum Storage is a room. Wax Museum Storage is below the steel trapdoor. The steel trapdoor is below the Wax Museum Lobby.  The steel trapdoor is locked. The wax museum key unlocks the steel trapdoor.  The description of the steel trapdoor is "It's a steel door with the word 'STORAGE' written on it. It looks like it leads downward into a cellar of some sort. You wonder what important items they might keep down there". The description of the Wax Museum Storage is "A dark and musty cellar where the Museum keeps the figures that aren't on display or figures that they plan to donate."
 
 [Somewhere in Texas]
 Somewhere in Texas is a region. Luxurious House is in Somewhere in Texas.
@@ -163,7 +163,7 @@ Gettysburg is a region. Gettysburg Front Lawn is a room.  The description of Get
 Row 1-1 is a room. Row 1-2 is a room. Row 1-2 is east of Row 1-1. Row 1-3 is a room. Row 1-3 is east of Row 1-2. Row 1-4 is a room. Row 1-4 is east of Row 1-3. Row 1-5 is a room. Row 1-5 is east of Row 1-4. Row 2-1 is a room. Row 2-1 is north of Row 1-1. Row 2-2 is a room. Row 2-2 is east of Row 2-1. Row 2-3 is a room. Row 2-3 is east of Row 2-2. Row 2-4 is a room. Row 2-4 is east of Row 2-3. Row 2-5 is a room. Row 2-5 is east of Row 2-4. Row 3-1 is a room. Row 3-1 is north of Row 2-1. Row 3-2 is a room. Row 3-2 is east of Row 3-1. Row 3-3 is a room. Row 3-3 is east of Row 3-2. Row 3-4 is a room. Row 3-4 is east of Row 3-3. Row 3-5 is a room. Row 3-5 is east of Row 3-4. Row 4-1 is a room. Row 4-1 is north of Row 3-1.  Row 4-2 is a room. Row 4-2 is east of Row 4-1. Row 4-3 is a room. Row 4-3 is east of Row 4-2. Row 4-4 is a room. Row 4-4 is east of Row 4-3. Row 4-5 is a room. Row 4-5 is east of Row 4-4. Row 5-1 is a room. Row 5-1 is north of Row 4-1. Row 5-2 is a room. Row 5-2 is east of Row 5-1. Row 5-3 is a room. Row 5-3 is east of Row 5-2. Row 5-4 is a room. Row 5-4 is east of Row 5-3. Row 5-5 is a room. Row 5-5 is east of Row 5-4. Row 5-2 is north of Row 4-2.  Row 4-2 is north of Row 3-2. Row 3-2 is north of Row 2-2. Row 2-2 is north of Row 1-2. Row 5-3 is north of Row 4-3.  Row 4-3 is north of Row 3-3. Row 3-3 is north of Row 2-3. Row 2-3 is north of Row 1-3. Row 5-4 is north of Row 4-4.  Row 4-4 is north of Row 3-4. Row 3-4 is north of Row 2-4. Row 2-4 is north of Row 1-4. Row 5-5 is north of Row 4-5.  Row 4-5 is north of Row 3-5. Row 3-5 is north of Row 2-5. Row 2-5 is north of Row 1-5. 
 
 
-Elijah Adam's tombstone is in Row 5-1. The description of Elijah Adam's tombstone is "Elijah Adams, 1834-1867." Elijah Adam's tombstone is fixed in place.  William Casson's tombstone is in Row 2-4. The description of William Casson's tombstone is "William Casson, 1843-1868." William Casson's tombstone is fixed in place. John Greene's tombstone is in Row 3-2.  The description of John Greene's tombstone is "John Greene, 1827-1880." John Greene's tombstone is fixed in place. Andrew Moore's tombstone is in Row 4-5.  The description of Andrew Moore's tombstone is "Andrew Moore, 1847-1889."Andrew Moore's tombstone is fixed in place. Henry Miller's tombstone is in Row 1-3. The description of Henry Miller's tombstone is "Henry Miller 1859-1883." Henry Miller's tombstone is fixed in place. James Bush's Cathedral Entrance is in Row 3-3.  James Bush's Cathedral Entrance is fixed in place. The description of James Bush's Cathedral Entrance is "The opening of the Cathedral is a large brick structure that seems to lead downwards into a crypt. Fancy. The placard on the front says: [Paragraph Break]'Here lies James 'Texas Tea' Bush. 1836-1866'. [Paragraph Break]Strangely, you notice there isn't a keyhole on the structure but rather a complex system of ropes and pulleys.  If there's a way to open this, it's probably complicated."
+Elijah Adam's tombstone is in Row 5-1. The description of Elijah Adam's tombstone is "Elijah Adams, 1834-1867." Elijah Adam's tombstone is fixed in place.  William Casson's tombstone is in Row 2-4. The description of William Casson's tombstone is "William Casson, 1843-1868." William Casson's tombstone is fixed in place. John Greene's tombstone is in Row 3-2.  The description of John Greene's tombstone is "John Greene, 1827-1880." John Greene's tombstone is fixed in place. Andrew Moore's tombstone is in Row 4-5.  The description of Andrew Moore's tombstone is "Andrew Moore, 1847-1889."Andrew Moore's tombstone is fixed in place. Henry Miller's tombstone is in Row 1-3. The description of Henry Miller's tombstone is "Henry Miller 1859-1883." Henry Miller's tombstone is fixed in place. James Bush's Cathedral Entrance is in Row 3-3.  James Bush's Cathedral Entrance is fixed in place. The description of James Bush's Cathedral Entrance is "The opening of the Cathedral is a large brick structure that seems to lead downwards into a crypt. Fancy. You go down and attempt to open the door, but it won't open.  The placard on the front says: [Paragraph Break]'Here lies James 'Texas Tea' Bush. 1836-1866'. [Paragraph Break]Strangely, you notice there isn't a keyhole on the structure but rather a complex system of ropes and pulleys, one of which ties to a tombstone just south of you.  If there's a way to open this, it's probably complicated."
 
 
 [Times Square]
@@ -172,8 +172,8 @@ New York Rooftop is a room. George Walker Bush is a person. The description of G
 
 [Smithsonian]
 The Smithsonian is a region.
-Smithsonian Lobby is a room. The description of the Smithsonian Lobby is "A spatious front entrance to the Smithsonian Museum. North of here is Main Hall."
-Smithsonian Main Hall is a room. Smithsonian Main Hall is north of Smithsonian Lobby. The description of the Smithsonian Main Hall is "The center of the Smithsonian, connecting the East and West wings as well as the Upper Level. A guard is blocking the path upstairs."
+Smithsonian Lobby is a room. The description of the Smithsonian Lobby is "A spatious front entrance to the Smithsonian Museum. There appears to be nothing of interest here. North of here is Main Hall."
+Smithsonian Main Hall is a room. Smithsonian Main Hall is north of Smithsonian Lobby. The description of the Smithsonian Main Hall is "The center of the Smithsonian, connecting the East and West wings as well as the Upper Level. A guard is blocking the path upstairs, while an unattended reception desk stands in the center."
 Smithsonian Upper Hall is a room. Smithsonian Upper Hall is above the Smithsonian Main Hall. The description of the Smithsonian Upper Hall is "The upper-center of the Smithsonian, connecting the Upper Corridor to the west. Heading down the stairs takes you to the Main Hall."
 Smithsonian Upper Corridor is a room. Smithsonian Upper Corridor is west of Smithsonian Upper Hall. The description of the Smithsonian Upper Corridor is "The red carpeted upper corridor that connects the security room to the north, the security breakroom to the west, and the upper hall to the east." Security Breakroom is west of Smithsonian Upper Corridor. Security Breakroom is a room. The description of the Security Breakroom is "A place where the security officers keep their personal belongings. The Upper Corridor is to the east." 
 Smithsonian Security Room is a room. Smithsonian Security Room is north of Smithsonian Upper Corridor. The description of the Smithsonian Security Room is "A restricted area used to control the cameras, computers, and other electronics in the Smithsonian. The Upper Corrider is to the south.".
@@ -191,9 +191,9 @@ NullRoom is a room.
 [Objects in Las Vegas]
 A bed is in the bedroom. "A king sized bed with silk sheets takes up most of the room." The description of the bed is "The bed is still unmade from last night's escapades." The bed is fixed in place.
 A body mirror is in the bedroom.  The body mirror is fixed in place. The description of the body mirror is "You are mezmerized by the handsomeness you're witnessing. In the reflection you see your nightstand. Perhaps there's something interesting in there".
-A spray bottle is an object. The description of the spray bottle is "The bottle is full of lemon juice. Many suspicious-looking objects hold secrets that are hidden from the naked eye, but sprayed with lemon juice, they cannot hide from the Cage-master."
+A spray bottle is an object. The description of the spray bottle is "The bottle is full of lemon juice. Many suspicious-looking objects hold secrets that are hidden from the naked eye but, sprayed with lemon juice, they cannot hide from the Cage-master."
 A torn out paper is an encrypted object. The description of torn out paper is "It's Page 47 from the president's secret book in the cliffhanger from National Treasure 2. Could this be important?" 
-A mask is an object.  The description of the mask is "It's a mask of John Travolta Cage you stole from the Face/Off set. Its waxy accuracy could make anyone look like a plastic version of him. ". The mask is wearable.
+A mask is an object.  The description of the mask is "It's a mask of John Travolta you stole from the Face/Off set. Its waxy accuracy could make anyone look like a plastic version of him. ". The mask is wearable.
 A declaration is an object. The printed name of declaration is "Declaration of Independence (declaration)". The description of declaration is "You went back and stole this a second time after the filming of National Treasure 2. You're sure it will aid you if you ever get stuck in your travels."
 A nightstand is a closed container in the bedroom. "There is a nightstand by the side of the bed." The nightstand is openable and fixed in place. The description of the nightstand is "An ancient Greek nightstand where you keep your most valuable treasures." The declaration, torn out paper, and the spray bottle are in the nightstand. 
 A dresser is a closed container in the bedroom. The dresser is openable and fixed in place. The description of the dresser is "An old voodoo dresser said to once be a magical dresser that enchants clothing items." The mask is in the dresser. 
@@ -202,13 +202,13 @@ The motorcycle is in the garage.  The description of the motorcycle is "It's the
 [Objects in Wax Museum]
  Wax Oprah is in the Wax Museum West Hall.   Wax Oprah is fixed in place.   Wax George Clooney is in the Wax Museum West Hall. Wax George Clooney is fixed in place. The description of Wax George Clooney is "Cage clenches his fist with Cage-rage as he looks at Clooney. Clooney's looks, talents, and wealth is only half of that of your own. As much as you hate him, you believe he probably isn't important right now.". Wax Angelina Jolie is in the Wax Museum West Hall. Wax Angelina Jolie is fixed in place. The description of Wax Angelina Jolie is "Cage remembers those lips. The lips he almost stole in 'Gone in 60 Seconds'. She tried to leave the Cage heart-broken. But the Cage does not break. He breaks others. But as much as still he still loves Jolie, Cage knows she's not important right now.". 
 
-Wax John Travolta is in the Wax Museum East Hall.  Wax John Travolta is fixed in place.  The description of John Travolta is "Your other face in Face/Off, the scientologist nut-bag, the man JT himself.  Unlike the other figures, you notice that while the figure is fixed in place, with enough force, it could be moved but not carried.  You also remember you still have the John Travolta mask from Face/Off, but you don't remember where you put it. The Cage is onto something here.". Wax Kim Kardashian is in the Wax Museum East Hall. The description of Kim Kardashian is " This Kim figure probably has the same amount of talent as the real one. Cage softly chuckles at the thought, not even considering the statue as being important in anyway".  Wax Kim Kardashian is fixed in place. Wax Micheal Jackson is in the Wax Museum East Hall. Wax Micheal Jackson is fixed in place. The description of the Wax Micheal Jackson is "Micheal Jackson was the Cage's favorite music to make passionate love to. It's a shame he died the way he did. Now Cage makes love to One Direction. There doesn't seem to be anything important about mister Jackson's figure."
+Wax John Travolta is in the Wax Museum East Hall.  Wax John Travolta is fixed in place.  The description of John Travolta is "Your other face in Face/Off, the scientologist nut-bag, the man JT himself.  Unlike the other figures, you notice that while the figure is fixed in place, with enough force, it could be replaced with something similar in size and appearance.  You also remember you still have the John Travolta mask from Face/Off, but you don't remember where you put it. The Cage is onto something here.". Wax Kim Kardashian is in the Wax Museum East Hall. The description of Kim Kardashian is " This Kim figure probably has the same amount of talent as the real one. Cage softly chuckles at the thought, not even considering the statue as being important in anyway".  Wax Kim Kardashian is fixed in place. Wax Micheal Jackson is in the Wax Museum East Hall. Wax Micheal Jackson is fixed in place. The description of the Wax Micheal Jackson is "Micheal Jackson was the Cage's favorite music to make passionate love to. It's a shame he died the way he did. Now Cage makes love to One Direction and hasn't looked back. He does it to make his women seem more beautiful. Still, there doesn't seem to be anything important about mister Jackson's figure."
 
-The wax museum key is in the Wax Museum Storage.  The description of the museum key is "A key that probably unlocks the trapdoor to the storage room". Wax Lewis , Wax Clark is in the Wax Museum Storage.  Wax Lewis is fixed in place. Wax Clark is fixed in place. Wax George Bush is in the Wax Museum Storage.  Wax George Bush is fixed in place.  The description of Wax George Bush is "This figure is awefully life-like. For some reason this figure looks much more detailed than any other one you've seen at the museum. There's something about how it stares into your eyes, almost with anger. And then you remember, it's just a figure!". Wax Tom Cruise is in the Wax Museum Storage. Wax Tom Cruise is fixed in place. The description of Wax Tom Cruise is "You think to yourself, 'shouldn't this be stored in the closet?'".
+The wax museum key is in the Wax Museum Storage.  The description of the museum key is "A key that probably unlocks the trapdoor to the storage room". Wax Lewis , Wax Clark is in the Wax Museum Storage.  Wax Lewis is fixed in place. Wax Clark is fixed in place. Wax George Bush is in the Wax Museum Storage.  Wax George Bush is fixed in place.  The description of Wax George Bush is "This figure is awefully life-like. For some reason this figure looks much more detailed than any other one you've seen at the museum. There's something about how it stares into your eyes, almost with anger. And then you remember, it's just a figure!". Wax Tom Cruise is in the Wax Museum Storage. Wax Tom Cruise is fixed in place. The description of Wax Tom Cruise is "You think to yourself, 'Shouldn't this be stored in the closet?'".
 
 [Objects in Smithsonian]
-A glass case is in the Smithsonian Safe Room. The glass case is a container.  Inside the glass case is the ancient compass.  The description of the ancient compass is "Its scratched bronze coat comes off at your fingertips as you touch it. This must be the real compass! You're sure this must point to the true location of the buried oil. For some reason, it seems to point to ... somewhere in Texas? Maybe you should follow it." The glass case is fixed in place. The description of the glass case is "This is where the Smithsonian keeps the Lewis and Clark compass! The security alarm looks like it can be spoofed if you can swap the artifact with something of equal size and weight in the glass case.".
-The computer is inside the Smithsonian Security room. The description of the computer is "You can probably hack the safe door from here, but it looks like you'll need a password, an ID card, and a finger print to get in. Security just isn't like it was back in the day.".  The computer is fixed in place.
+A glass case is in the Smithsonian Safe Room. The glass case is a container.  Inside the glass case is the ancient compass.  The description of the ancient compass is "Its scratched, bronze coat comes off at your fingertips as you touch it. This must be the real compass! You're sure this must point to the true location of the buried oil. Using your Cage-wisdom to interpret the strength and direction of the needle, it seems to point to ... somewhere in Texas? Maybe you should follow it." The glass case is fixed in place. The description of the glass case is "This is where the Smithsonian keeps the Lewis and Clark compass! The security alarm looks like it can be spoofed if you can swap the artifact with something of equal size and weight in the glass case.".
+The computer is inside the Smithsonian Security room. The description of the computer is "You can probably hack the safe door from here, but it looks like you'll need a password, an ID card, and a finger print from one of the staff to get in. Security just isn't like it was back in the day.".  The computer is fixed in place.
 The reception desk is in the Smithsonian Main Hall.  The reception desk is fixed in place. The description of the reception desk is "A large, oak desk used to do reception things. It's currently not being attended to." The reception desk is a closed container.  The reception desk is openable.The bathroom key is in the reception desk. The description of the bathroom key is "This opens the bathroom in the south west wing of the Smithsonian.".
 ID Card is an object. The description is "It belongs to a Ryan Smith, born 7-15-69. He must have dropped this." The ID Card is in Smithsonian East Wing.
 The Exhibit 1 is in the Smithsonian West Wing.  Exhibit 1 is fixed in place. The description of the Exhibit 1 is "This exhibit is of Kermit the Frog, Jim Henson's loveable amphibian from the muppets. The placard says that Jim Henson donated the puppet in honor of the show's tenth anniversary. Cage remembers he hasn't been in a muppet movie yet. Maybe a Chirstmas special would do. Still, it doesn't look like Kermit is important right now."
@@ -219,14 +219,14 @@ The Exhibit 5 is in the Smithsonian East Wing.  Exhibit 5 is fixed in place. The
 The toilet is in the Smithsonian Bathroom. The toilet is fixed in place. The description of the toilet is "It has a sign labeled 'out of order' pasted on the front of it. Good thing the Cage doesn't poop."
 The plunger is in the Smithsonian Bathroom. The description of the plunger is "It's a long wooden stick attached to a plastic suction that looks like it hasn't been cleaned in years". 
 The souvenir rack is in the Smithsonian Gift Shop. The souvenir rack is fixed in place. The description of the souvenir rack is "It's filled with a variety of knick-knacks. Next to the fake Declaration of Independences, a painting of former President George W. Bush on a post card catches your eye. You pick it up and look at it closer. For some reason you can't help but feel you're being watched. You put down the post card and decide not to steal it."
-The lockers are in the Security Breakroom.  The lockers are fixed in place. The description of the lockers are "An array of green steel lockers that probably contain personal belongings of the guards that work here.  All of the lockers seem shut tightly except for the one. The locker on the end seems like it could be pryed open.". 
+The lockers are in the Security Breakroom.  The lockers are fixed in place. The description of the lockers are "An array of green steel lockers that probably contain personal belongings of the guards that work here.  All of the lockers seem shut tightly except for one. The locker on the end seems slightly more rusted on it's hinges.  If pryed with enough leverage, the locker looks like it could be forced open.". 
 The microwave is in the Security Breakroom. The microwave is fixed in place. The description of the microwave is "This spaghetti-stained microwave smells as if something died in it. It's so old it could probably have an exhibit of it's own.".
 
 
 [Objects at Bush's House]
-A bookshelf is in the Luxurious House Bedroom. The bookshelf is fixed in place. A couch is in the Luxurious House Living Room. The couch is fixed in place. The description of the couch is "The couch is made of a blue denim and is covered with paint supplies. It doesn't look like anyone can sit here.".
+A bookshelf is in the Luxurious House Bedroom. The bookshelf is fixed in place. A couch is in the Luxurious House Living Room. The couch is fixed in place. The description of the couch is "The couch is made of a blue denim and is covered with paint supplies. It doesn't look like anyone can sit here, or has for some time.".
 A king-bed is in the Luxurious House Bedroom.  The king-bed is fixed in place. The description of the king-bed is "It's bigger than Cage's! That's impossible!". A painter's set is in the Luxurious House Bedroom.  The painter's set is fixed in place. The description of the painter's set is "A horrible painting of a bald eagle rests on the easel. Whoever made this must have been blind.". 
-A table is in the Luxurious House Basement. The table is fixed in place.  The description of the table is "It's an old oak table with the Presidental Seal engraved on the top.". A small notebook is on the table. The description of the small notebook is "You read the notebook. It says: [Paragraph Break] I'm so close I can taste it. The Bush family deserves to find this oil and I'm going to be the one to do it. My great great grandfather, James Bush, died looking for the oil and I promise I will find it. You hear that papey,  Walker is gonna make you proud. I just need to find that damn compass. The legend says Lewis and Clark were looking for the oil too. If only I knew where it was.  I'm going mad looking for it, papey, I am! Oh Papa James, why did you have to die in Gettysburg? Why couldn't you have found the lost city of oil and lived forever with the whole family. Well that doesn't matter no more. I know you've got the last clue and as soon as I can, I'm coming to get you in the Gettysburg Cemetary in Row 3-3. I've already figured out half of your final puzzle all by myself! Dub'ya is gonna make you proud papey, you just watch. - Love G.W.B' [Paragraph Break] Former President George W. Bush? He must have been the one who wrote on the 47th page of the president's book! At least you have the compass and he doesn't. You're sure Bush's notes on the 'final puzzle' will be helpful in finding the last clue.". 
+A table is in the Luxurious House Basement. The table is fixed in place.  The description of the table is "It's an old oak table with the Presidental Seal engraved on the top.". A small notebook is on the table. The description of the small notebook is "You read the notebook. It says: [Paragraph Break] I'm so close I can taste it. The Bush family deserves to find this oil and I'm going to be the one to do it. My great great grandfather, James Bush, died looking for the oil and I promise I will find it. You hear that papey,  Walker is gonna make you proud! I just need to find that damn compass. The legend says Lewis and Clark were looking for the oil too. If only I knew where it was.  I'm going mad looking for it, papey, I am! Oh Papa James, why did you have to die in Gettysburg? Why couldn't you have found the lost city of oil and lived forever with the whole family. Well that doesn't matter no more. I know you've got the last clue and, as soon as I can, I'm coming to get you in Row 3-3. I've already figured out half of your final puzzle all by myself! Dub'ya is gonna make you proud papey, you just watch. - Love G.W.B' [Paragraph Break] Former President George W. Bush? He must have been the one who wrote on the 47th page of the president's book! At least you have the compass and he doesn't. You're sure Bush's notes on the 'final puzzle' will be helpful in finding the last clue.". 
 Oil drum is in the Luxurious House Basement. The Oil drum is fixed in place. The description of the Oil drum is "A strong odor of oil fumes come from the top of the the drum. This is what the compass must be picking up! But that doesn't make any sense. There must be something more to this."
 A map is in the Luxurious House Basement. The map is fixed in place. The description of the map is "A series of pinned strings connect thumb tacks from Vegas, Hollywood, the Smithsonian, here, and Gettysburg. It's clear this person has obsessed about the land of oil for a long time."
 The crumpled paper is on the table. The description of the crumpled paper is "It reads: [Paragraph Break] 'After putting everything together,  I found this clue in grandpa James's old journal. It looks like some kind of cryptic puzzle of some sort: [Paragraph Break]
@@ -238,23 +238,23 @@ The crumpled paper is on the table. The description of the crumpled paper is "It
   
   5-1T, 2-4U, _____ , _____ , _____ .
   
-  I think I've figured out the first two combinations in this five part sequence: 5-1T and 2-3T. But what does it mean? What do the numbers on the left and right mean? I think its referring to row sections in the Gettysburg graveyard. But what do the T's mean? Tamper? Touch? Turn? What do the U's mean? Untamper? Untouch? Unturn? Papey knows Bush's ain't no good at math. ".
+ 'I think I've figured out the first two combinations in this five part sequence: 5-1T and 2-4T.  This must be the first two to opening my papey's grave in Gettyburg and the pairs must align with the sections at the graveyard. It looks as though the column of numbers on the left correspond to the first number in the pair, but I can't figure out where the second number-letter comes from.  It has to be a pattern, like a key unlocking a door. Does it involve addition? subtraction? counting? Papey knows the Bush's ain't good at math. As for the T's and U's, they must correspond to tampering, no, turning and unturning the tombstones in the cemetary. I remember reading that the gravestones were built in a way that allowed them to be rotated 90 degrees - or is it 180 degrees? Anyways, that's all I've got for now. Once I crack this, it's off to see papey.' ".
 
 
 
 [Objects in Gettysberg]
-A stone coffin is in James Bush's Chamber. The stone coffin is a closed container. The description of the stone coffin is "Moss and cobwebs cover this ancient granite tomb. This must be the final resting place of Bush's great grandfather. Cage asks himself 'Would I really defile this peaceful grave just for clues on the lost city of oil? Of course I would!'".
+A stone coffin is in James Bush's Chamber. The stone coffin is a closed container. The description of the stone coffin is "Moss and cobwebs cover this ancient granite tomb. This must be the final resting place of Bush's great great grandfather. Cage asks himself, 'Would I really defile this peaceful grave just for clues on the lost city of oil? Of course I would!'".
 
 [Objects in New York]
 A crane is in New York Rooftop. The crane is fixed in place. The description of the crane is "It controls the mechanism that suspends the Cage. You notice a big red button on it, but it's just out of reach. If only you could throw something at it!"
 
 [Objects in NullRoom]
-A security outfit is an object. The description is "It's a navy blue security outfit. It looks awefully convincing for something you bought at a gift shop." The security outfit is wearable.
+A security outfit is an object. The description is "It's a navy blue security outfit. It looks awefully convincing for something bought at a gift shop." The security outfit is wearable.
 A wax compass is in the NullRoom. The description of the wax compass is "It looks identical to the one Lewis and Clark used in weight and size, but it's nowhere near the real one."
 The five-dollar bill is an object. The description of the five-dollar bill is "It's got Lincoln's face on it. It needs more Cage-face."
 Ryan Smith's Journal is an object. The description is "You quickly sift through the contents of his journal, looking for any hints for a potential password. You stumble across a few birthdates (7-15-69) (4-8-75) (2-1-44).".
 Plunger Handle is an object. The description is "A sharp broken piece of wood that snapped when you tried to open the locker.".
-Plunger Suction is an object. The description is "A large red suction cup that sucks with a tremendous force.".
+Plunger Suction is an object. The description is "A large red suction cup that, like most of Cage's films, sucks with a tremendous force.".
 
 [**PEOPLE**]
 Nick is a person. The printed name of Nick is "Nicolas Cage". The player is Nick. The description of Nick is "You are Acadamy Award winner, national-treasure-finder,  and panty-dropper, Nicolas Cage." Nick is wearing shoes.  Nick is holding the camcorder. The description of the camcorder is "It's currently recording right now, filming your National Treasure adventure." The description of the shoes are "Cage's lucky blue shoes. He's never taken them off in all his 50+ years of living and doesn't plan to.". 
@@ -288,7 +288,7 @@ When WaxPlot2 ends:
 
 
 [**ACTIONS**]
-Replacing is an action applying to one thing. Understand "replace [something]" as replacing. Understand "swap [something]" as replacing. Understand "move [something]" as replacing.
+Replacing is an action applying to one thing. Understand "replace [something]" as replacing. Understand "swap [something]" as replacing. Understand "move [something]" as replacing. Understand "change [something]" as replacing. Understand "switch [something]" as replacing.
 Carry out replacing:
 	if the noun is Wax John Travolta:
 		if the player is wearing the mask:
@@ -317,7 +317,7 @@ Instead of buying:
 	else:
 		say "You can't buy that".
 		
-Hacking is an action applying to one thing. Understand "hack [something]" as hacking.
+Hacking is an action applying to one thing. Understand "hack [something]" as hacking. Understand "break into [something]" as hacking. Understand "crack [something]" as hacking. Understand "use [something]" as hacking.
 Carry out hacking:
 	if the noun is the computer:
 		if the player has the ID Card and the player has Ryan Smith's Journal and GuardKO is true:
@@ -327,7 +327,7 @@ Carry out hacking:
 			say "It doesn't look like you have everything you need to hack the computer. Perhaps you should take a closer look at the computer to see what you need.".
 		
 		
-Prying is an action applying to one thing. Understand "pry [something]" as prying.
+Prying is an action applying to one thing. Understand "pry [something]" as prying. Understand "force [something]" as prying. Understand "pull [something]" as prying. Understand "rip [something]" as prying.
 Carry out prying:
 	if the noun is the lockers:
 		if the player has the plunger: 
@@ -339,7 +339,7 @@ Carry out prying:
 		else: 
 			say "You grab the loose locker door with your bare hands and pull with all your might. Unfortunately you can't get a good enough grip to pry it open. You'll need to find something to open it with".
 			
-Surprising is an action applying to one thing. Understand "surprise [something]" as surprising. Understand "attack [something]" as surprising. Understand "jump [something]" as surprising. Understand "hit [something]" as surprising.
+Surprising is an action applying to one thing. Understand "surprise [something]" as surprising. Understand "attack [something]" as surprising. Understand "jump [something]" as surprising. Understand "hit [something]" as surprising. Understand "sneak attack [something]" as surprising. Understand "knock out [something]" as surprising. Understand "KO [something]" as surprising.
 Carry out surprising:
 	if the noun is the Surveillance Officer:
 		if the player is holding the Plunger Suction and the player is holding the Plunger Handle:
@@ -352,6 +352,7 @@ Carry out surprising:
 		
 [5-1T, 2-4U, 3-2U, 4-5T, 1-3T] 
 [To win: Adam's turned, Casson's turned, Greene's unturned, Moore's unturned, Miller's turned]
+Understand "unturn [something]" as turning. Understand "tamper [something]" as turning. Understand "twist [something]" as turning.
 Instead of turning:
 	if the noun is the Henry Miller's tombstone:
 		if the Henry Miller's tombstone is turned:
@@ -461,3 +462,7 @@ Report spraying:
 		say "[line break] You think to yourself, 'I better go to The Strip to ask Jon Voight about this clue.'";
 	else:
 		say "Default message, replace with clue";
+		
+Release along with cover art, the source text, an interpreter, and a website.
+
+The story description is "In the final installment of the National Treasure series, Nicolas Cage, struggling with an addiction of taking on too many terrible film roles, must prove he's still in his golden age by creating the greatest film ever made. For the last time, Cage (playing Ben Gates playing Cage) is thrusted into a world of mystery when he discovers an anonymous source from the 47th page of the President's Secret book telling of the secret lost City of Oil.  Equipped with a camcorder, the Declaration of Independence, and items from his other films, Cage must face/off against his darkest adventure yet in order to save the world, and most importantly, his film career.  "
