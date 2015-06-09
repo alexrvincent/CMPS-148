@@ -36,19 +36,32 @@ Instead examining an encrypted thing:
 
 Before going north:
 	if preparation is happening:
-		say "Aren't you forgetting something?";
+		say "There's still things left to investigate!";
 		stop;
+
+Instead of asking Security Guard about something:
+	say "The guard ignores your question and says, 'Move along buddy, only security personal are allowed up here.'";
+
+Instead of asking Cashier about something:
+	say "We sell costumes here. The judge's robe is $10, the security outfit is $5, and the Lincoln suit is $2. ";
 
 Instead of asking Jon about something:
 	[say "(Asking a specific character) [noun] - [the topic understood] - [the player's command][paragraph break]";]
 	if the topic understood includes "paper": 
 		say "'Jon, would you take a look at this clue I found?' you ask. [paragraph break]Jon examines the revealed message and replies, 'Ahh yes, the Land of Oil. Legend has it that Meriwether Lewis and William Clark were not an expedition simply to explore the West, but were actually in search of a hidden treasure. I never really bought into it, but this note came from the President's Book of Secrets, so maybe you're on to something. [Paragraph Break] Find their compass, it will lead you to the lost city of oil! Travel to Hollywood and pay a visit to the wax museum in Hollywood. It should be in the hands of Lewis!'";
+		now the description of declaration is "Note to self: [line break] 1. Ask Jon about the land of oil.[line break] 2. *Travel to hollywood* and locate the Lewis and Clark figures.";
 	else if the player's command includes "clue": 
 		say "'Jon, would you take a look at this clue I found?' you ask. [paragraph break]Jon examines the revealed message and replies, 'Ahh yes, the Land of Oil. Legend has it that Meriwether Lewis and William Clark were not an expedition simply to explore the West, but were actually in search of a hidden treasure. I never really bought into it, but this note came from the President's Book of Secrets, so maybe you're on to something. [Paragraph Break] Find their compass, it will lead you to the lost city of oil! Travel to Hollywood and pay a visit to the wax museum in Hollywood. It should be in the hands of Lewis!'";
+		now the description of declaration is "Note to self: [line break] 1. Ask Jon about the land of oil.[line break] 2. *Travel to hollywood* and locate the Lewis and Clark figures.";
 	else if the player's command includes "oil": 
 		say "'Jon, would you take a look at this clue I found?' you ask. [paragraph break]Jon examines the revealed message and replies, 'Ahh yes, the Land of Oil. Legend has it that Meriwether Lewis and William Clark were not an expedition simply to explore the West, but were actually in search of a hidden treasure. I never really bought into it, but this note came from the President's Book of Secrets, so maybe you're on to something. [Paragraph Break] Find their compass, it will lead you to the lost city of oil! Travel to Hollywood and pay a visit to the wax museum in Hollywood. It should be in the hands of Lewis!'";
+		now the description of declaration is "Note to self: [line break] 1. Ask Jon about the land of oil.[line break] 2. *Travel to hollywood* and locate the Lewis and Clark figures.";
 	else:
 		say "Jon replies, 'Not sure about that... Do you have any leads for another treasure?'"
+
+After taking the wax museum key:
+	now the description of declaration is "Note to self: [line break] 1. Ask Jon about the land of oil.[line break] 2. *Travel to hollywood* and locate the Lewis and Clark figures. [line break] 3. Escape the Wax Museum, *travel to Smithsonian* and get the real compass.";
+	
 		
 Instead of examining Wax Oprah:
 	if OprahDiscovered is true:
@@ -99,6 +112,9 @@ Instead of examining the bookshelf:
 		now PassageDiscovered is true;
 	else:
 		say "The bookshelf had a secret lever that opened a passage way! Cage's clue sense are tingling. Maybe you should head down there.".
+
+After taking the crumpled paper:
+	now the description of declaration is "Note to self: [line break] 1. Ask Jon about the land of oil.[line break] 2. *Travel to hollywood* and locate the Lewis and Clark figures. [line break] 3. Escape the Wax Museum, *travel to Smithsonian* and get the real compass. [line break] 4. *Travel to Texas* as that is where the compass is pointing.[line break] 5. *Travel to Gettysburg* and solve the final clue.";
 		
 Instead of going to the Luxurious House Basement:
 	if PassageDiscovered is false:
@@ -133,7 +149,7 @@ Instead of going to James Bush's Chamber:
 		move the player to James Bush's Chamber;
 	else:
 		say "You try to open the cathedral hatchet, but fail. There must be some other way to open it. You Cage senses deduce it probably has something to do with the tombstones.".
-	
+		
 [**REGIONS/ROOMS**]
 
 [Las Vegas Region]
@@ -219,7 +235,7 @@ The Exhibit 5 is in the Smithsonian East Wing.  Exhibit 5 is fixed in place. The
 The toilet is in the Smithsonian Bathroom. The toilet is fixed in place. The description of the toilet is "It has a sign labeled 'out of order' pasted on the front of it. Good thing the Cage doesn't poop."
 The plunger is in the Smithsonian Bathroom. The description of the plunger is "It's a long wooden stick attached to a plastic suction that looks like it hasn't been cleaned in years". 
 The souvenir rack is in the Smithsonian Gift Shop. The souvenir rack is fixed in place. The description of the souvenir rack is "It's filled with a variety of knick-knacks. Next to the fake Declaration of Independences, a painting of former President George W. Bush on a post card catches your eye. You pick it up and look at it closer. For some reason you can't help but feel you're being watched. You put down the post card and decide not to steal it."
-The lockers are in the Security Breakroom.  The lockers are fixed in place. The description of the lockers are "An array of green steel lockers that probably contain personal belongings of the guards that work here.  All of the lockers seem shut tightly except for one. The locker on the end seems slightly more rusted on it's hinges.  If pryed with enough leverage, the locker looks like it could be forced open.". 
+The locker is in the Security Breakroom.  The locker is fixed in place. The description of the locker is "An array of green steel lockers that probably contain personal belongings of the guards that work here.  All of the lockers seem shut tightly except for one. The locker on the end seems slightly more rusted on it's hinges.  If pryed with enough leverage, the locker looks like it could be forced open.". 
 The microwave is in the Security Breakroom. The microwave is fixed in place. The description of the microwave is "This spaghetti-stained microwave smells as if something died in it. It's so old it could probably have an exhibit of it's own.".
 
 
@@ -283,22 +299,26 @@ GuardKO is a truth state that varies. GuardKO is false.
 	SmithPlot1 is a scene. SmithPlot1 begins when WaxPlot3 ends.
 
 When WaxPlot2 ends:
-	say "You overhear someone say, 'I hear that they keep extra figures in the back, but the security is so tight you'd have to be made of wax to get in.'";
+	if nick is in the wax museum:
+		say "You overhear someone say, 'I hear that they keep extra figures in the back, but the security is so tight you'd have to be made of wax to get in.'";
 
 
 
 [**ACTIONS**]
-Replacing is an action applying to one thing. Understand "replace [something]" as replacing. Understand "swap [something]" as replacing. Understand "move [something]" as replacing. Understand "change [something]" as replacing. Understand "switch [something]" as replacing.
+Replacing is an action applying to one thing. Understand "replace [something]" as replacing. Understand the command "swap" as something new. Understand "swap [something]" as replacing. Understand "move [something]" as replacing. Understand "change [something]" as replacing. Understand "switch [something]" as replacing.
 Carry out replacing:
 	if the noun is Wax John Travolta:
 		if the player is wearing the mask:
 			say "You quickly hide the Wax Travolta behind a curtain and, wearing your mask, take its place. You wait until afternoon as a security guard puts you into a box and hauls you down into storage. You quickly burst out, finding yourself in the dusty Wax Museum storage.  Just like in Face/Off, you've once again fooled people into thinking you were John Travolta!";
 			move the player to Wax Museum Storage;
+		else:
+			say "You look nothing like John Travolta. Maybe you should wear your mask from the set of Face/Off.";
 	else: 
 		if the noun is ancient compass:
 			say "[Paragraph Break] You stealthily replace the compass with the wax one you found at the museum and put the real one in your pocket.";
 			now the wax compass is in the glass case;
 			now the player has the ancient compass;
+			now the description of declaration is "Note to self: [line break] 1. Ask Jon about the land of oil.[line break] 2. *Travel to hollywood* and locate the Lewis and Clark figures. [line break] 3. Escape the Wax Museum, *travel to Smithsonian* and get the real compass. [line break] 4. *Travel to Texas* as that is where the compass is pointing.";
 		else: 
 			say "Cage probably wouldn't do that. Maybe in a different film".
 		
@@ -327,9 +347,9 @@ Carry out hacking:
 			say "It doesn't look like you have everything you need to hack the computer. Perhaps you should take a closer look at the computer to see what you need.".
 		
 		
-Prying is an action applying to one thing. Understand "pry [something]" as prying. Understand "force [something]" as prying. Understand "pull [something]" as prying. Understand "rip [something]" as prying.
+Prying is an action applying to one thing. Understand "pry [something]" as prying. Understand "force [something]" as prying. Understand "pull [something]" as prying. Understand "rip [something]" as prying. Understand "pry open [something]" as prying.
 Carry out prying:
-	if the noun is the lockers:
+	if the noun is the locker:
 		if the player has the plunger: 
 			say "[Paragraph Break]With all your might, you stick the plunger to the locker and pull as hard as you can. The plunger snaps in half as the loose locker door plops off, revealing a small journal. In the distance you hear someone coming. Before reattaching the locker door, you steal the journal and quickly pick up the broken plunger parts. ";
 			now the player has Ryan Smith's Journal;
@@ -338,17 +358,20 @@ Carry out prying:
 			move the plunger to the NullRoom;
 		else: 
 			say "You grab the loose locker door with your bare hands and pull with all your might. Unfortunately you can't get a good enough grip to pry it open. You'll need to find something to open it with".
-			
-Surprising is an action applying to one thing. Understand "surprise [something]" as surprising. Understand "attack [something]" as surprising. Understand "jump [something]" as surprising. Understand "hit [something]" as surprising. Understand "sneak attack [something]" as surprising. Understand "knock out [something]" as surprising. Understand "KO [something]" as surprising.
+
+Surprising is an action applying to one thing. Understand "surprise [something]" as surprising. Understand the command "attack" as something new. Understand "attack [something]" as surprising. Understand "jump [something]" as surprising. Understand "hit [something]" as surprising. Understand "sneak attack [something]" as surprising. Understand "knock out [something]" as surprising. Understand "KO [something]" as surprising.
 Carry out surprising:
-	if the noun is the Surveillance Officer:
-		if the player is holding the Plunger Suction and the player is holding the Plunger Handle:
-			say "You sneak attack the officer by swinging the plunger handle at him but miss. He quickly dodges out of his chair, jumping up to his feet and drawing his nightstick.  Using your Cage-like-action-movie-moves, you sword play him with the end of the Plunger Handle as he defends himself with a nightstick. In your fight, he grabs the handle and snaps it in two. Thinking quickly, you throw the plunger suction at his face, covering his face completely. The officer struggles to take the plunger suction off his face, slowly losing oxygen. Out of air due to the suction on his face, the Officer collapses to the ground. You stand up and dust yourself off. 'Nobody rages the Cage', you say.";
-			now the Plunger Handle is in the NullRoom;
-			now the Plunger Suction is in the NullRoom;
-			now GuardKO is true;
-		else:
-			say "This officer is a pretty big guy. While your Cage-fists-of-fury can do some work, you'll want something sharp to take him on with.".
+	if GuardKO is false:
+		if the noun is the Surveillance Officer:
+			if the player is holding the Plunger Suction and the player is holding the Plunger Handle:
+				say "You sneak attack the officer by swinging the plunger handle at him but miss. He quickly dodges out of his chair, jumping up to his feet and drawing his nightstick.  Using your Cage-like-action-movie-moves, you sword play him with the end of the Plunger Handle as he defends himself with a nightstick. In your fight, he grabs the handle and snaps it in two. Thinking quickly, you throw the plunger suction at his face, covering his face completely. The officer struggles to take the plunger suction off his face, slowly losing oxygen. Out of air due to the suction on his face, the Officer collapses to the ground. You stand up and dust yourself off. 'Nobody rages the Cage', you say.";
+				now the Plunger Handle is in the NullRoom;
+				now the Plunger Suction is in the NullRoom;
+				now GuardKO is true;
+			else:
+				say "This officer is a pretty big guy. While your Cage-fists-of-fury can do some work, you'll want something sharp to take him on with.";
+	else:
+		say "He's had enough.";
 		
 [5-1T, 2-4U, 3-2U, 4-5T, 1-3T] 
 [To win: Adam's turned, Casson's turned, Greene's unturned, Moore's unturned, Miller's turned]
@@ -456,7 +479,7 @@ Carry out spraying:
 
 
 Report spraying: 
-	say "You spray ([SprayCapacity]% remaining) the [noun] with lemon juice to reveal a secret message: ";
+	say "You spray the [noun] with lemon juice to reveal a secret message: ";
 	if noun is torn out paper:
 		say "[line break]'The American people have been lied to. America is not the land of prosperity, it’s the land of oil. Somewhere under this sacred land was buried millions of gallons of oil - oil to power a million hummers for a thousand years!  I will find it, with or without the help of the FBI.'";
 		say "[line break] You think to yourself, 'I better go to The Strip to ask Jon Voight about this clue.'";
